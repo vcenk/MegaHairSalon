@@ -16,6 +16,7 @@
   /* Aliases for convenience */
   --color-background: var(--color-bg);
   --color-foreground: var(--color-text);
+  --color-muted: var(--color-text-muted);
 
   /* ─── Typography ─────────────────────────────────────── */
   --font-display: var(--font-cormorant), "Tiempos Headline", Georgia, serif;
@@ -62,6 +63,9 @@ body {
   font-family: var(--font-body);
   font-size: var(--text-body);
   line-height: var(--leading-body);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }

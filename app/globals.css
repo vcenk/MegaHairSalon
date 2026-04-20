@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── Colors ─────────────────────────────────────────── */
+  --color-bg: #FAF8F5;
+  --color-bg-alt: #F2EEE7;
+  --color-text: #1A1A1A;
+  --color-text-muted: #6B6661;
+  --color-border: #E5DFD5;
+  --color-accent: #B87333;
+  --color-accent-dark: #8A5524;
+  --color-accent-soft: #F5E8D8;
+  --color-success: #4A6741;
+  --color-error: #8B2E2E;
+
+  /* Aliases for convenience */
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-text);
+
+  /* ─── Typography ─────────────────────────────────────── */
+  --font-display: var(--font-cormorant), "Tiempos Headline", Georgia, serif;
+  --font-body: var(--font-inter), "Söhne", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+
+  --text-hero: clamp(3.5rem, 9vw, 8.75rem);
+  --text-h1: clamp(2.75rem, 6vw, 5rem);
+  --text-h2: clamp(2rem, 4vw, 3.25rem);
+  --text-h3: clamp(1.5rem, 2.5vw, 2rem);
+  --text-body-lg: 1.25rem;
+  --text-body: 1.0625rem;
+  --text-small: 0.9375rem;
+  --text-label: 0.75rem;
+
+  --leading-display: 1.05;
+  --leading-tight: 1.2;
+  --leading-body: 1.6;
+
+  --tracking-display: -0.02em;
+  --tracking-label: 0.18em;
+
+  /* ─── Layout ─────────────────────────────────────────── */
+  --container-max: 1280px;
+  --container-text: 720px;
+  --container-narrow: 960px;
+
+  /* ─── Motion ─────────────────────────────────────────── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 800ms;
+  --duration-reveal: 1200ms;
+}
+
+html {
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

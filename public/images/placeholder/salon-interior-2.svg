@@ -1,9 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="salon-interior-2 placeholder">
-  <rect width="100%" height="100%" fill="#F2EEE7"/>
-  <rect x="8" y="8" width="1184" height="1484" fill="none" stroke="#B87333" stroke-width="1" stroke-dasharray="8 8"/>
-  <g font-family="Georgia, serif" text-anchor="middle" fill="#6B6661">
-    <text x="1200" y="1500" transform="translate(1200 1500) scale(0.5) translate(1200 1500)" font-size="36" text-anchor="middle"></text>
-    <text x="600" y="740" font-size="28" fill="#1A1A1A">salon-interior-2</text>
-    <text x="600" y="774" font-size="18" letter-spacing="3">PLACEHOLDER · 1200×1500</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Megas Hair Salon interior detail">
+  
+  <defs>
+    <linearGradient id="warmVertical" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FAF8F5"/>
+      <stop offset="55%" stop-color="#F2EEE7"/>
+      <stop offset="100%" stop-color="#E5DFD5"/>
+    </linearGradient>
+    <linearGradient id="warmDiagonal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2EEE7"/>
+      <stop offset="100%" stop-color="#E5DFD5"/>
+    </linearGradient>
+    <radialGradient id="softVignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(26,26,26,0.20)"/>
+    </radialGradient>
+    <linearGradient id="inkToAccent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="70%" stop-color="#3D3A36"/>
+      <stop offset="100%" stop-color="#8A5524"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#warmDiagonal)"/>
+
+  <!-- Wall plane -->
+  <rect x="0" y="0" width="1200" height="900" fill="#FAF8F5" opacity="0.55"/>
+
+  <!-- Mirror / frame -->
+  <rect x="179" y="210.00000000000003" width="420" height="660" fill="#F2EEE7" stroke="#D6CEC0" stroke-width="2"/>
+  <rect x="191" y="222.00000000000003" width="396" height="636" fill="#E5DFD5" opacity="0.4"/>
+
+  <!-- Secondary frame -->
+  <rect x="675" y="300" width="300" height="450" fill="#F2EEE7" stroke="#D6CEC0" stroke-width="2"/>
+
+  <!-- Counter line -->
+  <line x1="0" y1="930" x2="1200" y2="930" stroke="#B87333" stroke-width="3" opacity="0.6"/>
+  <rect x="0" y="930" width="1200" height="570" fill="#E5DFD5" opacity="0.6"/>
+
+  <!-- Product bottles suggestion -->
+  <g opacity="0.5">
+    <rect x="192" y="1020.0000000000001" width="14" height="180" fill="#3D3A36"/>
+    <rect x="228" y="990" width="14" height="210.00000000000003" fill="#B87333"/>
+    <rect x="264" y="1050" width="14" height="150" fill="#3D3A36"/>
+    <rect x="300" y="1005.0000000000001" width="14" height="195" fill="#1A1A1A"/>
   </g>
+
+  <!-- Subtle monogram -->
+  <text x="600" y="750" font-family="Georgia, 'Times New Roman', serif" font-size="1050" fill="#B87333" fill-opacity="0.03" text-anchor="middle" font-weight="300">M</text>
+
+  <rect width="1200" height="1500" fill="url(#softVignette)"/>
 </svg>

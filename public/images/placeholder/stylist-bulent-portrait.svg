@@ -1,9 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="stylist-bulent-portrait placeholder">
-  <rect width="100%" height="100%" fill="#F2EEE7"/>
-  <rect x="8" y="8" width="1184" height="1484" fill="none" stroke="#B87333" stroke-width="1" stroke-dasharray="8 8"/>
-  <g font-family="Georgia, serif" text-anchor="middle" fill="#6B6661">
-    <text x="1200" y="1500" transform="translate(1200 1500) scale(0.5) translate(1200 1500)" font-size="36" text-anchor="middle"></text>
-    <text x="600" y="740" font-size="28" fill="#1A1A1A">stylist-bulent-portrait</text>
-    <text x="600" y="774" font-size="18" letter-spacing="3">PLACEHOLDER · 1200×1500</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Bülent — Megas Hair Salon, Coquitlam">
+  
+  <defs>
+    <linearGradient id="warmVertical" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FAF8F5"/>
+      <stop offset="55%" stop-color="#F2EEE7"/>
+      <stop offset="100%" stop-color="#E5DFD5"/>
+    </linearGradient>
+    <linearGradient id="warmDiagonal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2EEE7"/>
+      <stop offset="100%" stop-color="#E5DFD5"/>
+    </linearGradient>
+    <radialGradient id="softVignette" cx="50%" cy="50%" r="75%">
+      <stop offset="55%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(26,26,26,0.20)"/>
+    </radialGradient>
+    <linearGradient id="inkToAccent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="70%" stop-color="#3D3A36"/>
+      <stop offset="100%" stop-color="#8A5524"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#inkToAccent)"/>
+
+  <!-- Subtle texture -->
+  <g opacity="0.05">
+    <rect width="1200" height="1500" fill="url(#warmVertical)"/>
   </g>
+
+  <!-- Large serif initial -->
+  <text x="600" y="945" font-family="Georgia, 'Times New Roman', serif" font-size="1275" fill="#FAF8F5" fill-opacity="0.92" text-anchor="middle" font-weight="300">B</text>
+
+  <!-- Bottom brand band -->
+  <rect x="0" y="1360" width="1200" height="140" fill="#1A1A1A" opacity="0.7"/>
+  <text x="600" y="1418" font-family="Georgia, serif" font-size="50" fill="#FAF8F5" text-anchor="middle" font-weight="500" letter-spacing="-1">Bülent</text>
+  <text x="600" y="1464" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#B87333" text-anchor="middle" letter-spacing="6">35 YEARS · MASTER COLOURIST</text>
 </svg>

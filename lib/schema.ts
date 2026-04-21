@@ -103,6 +103,26 @@ export function faqSchema(faqs: { q: string; a: string }[]) {
   };
 }
 
+export function contactPageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: `Contact ${BUSINESS.name}`,
+    url: `${SITE.url}/contact`,
+    mainEntity: { "@id": BUSINESS_ID },
+  };
+}
+
+export function aboutPageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: `About ${BUSINESS.name}`,
+    url: `${SITE.url}/about`,
+    about: { "@id": BUSINESS_ID },
+  };
+}
+
 type ServiceInput = {
   name: string;
   serviceType: string;

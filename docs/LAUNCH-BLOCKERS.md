@@ -20,6 +20,13 @@ Items that must be resolved before production deployment.
 - [ ] Run full Lighthouse audit on all templates (target >=95 mobile)
 - [ ] Submit sitemap to GSC + Bing Webmaster Tools
 - [ ] Set up 301 from any additional legacy URLs found in GSC
+- [ ] Replace stub content on all 8 /services/* pages with full spec content (FAQs, pricing tables, process details) per docs/services/*.md
+- [ ] Replace stub content on all 4 /team/* pages with full bios, training history, and client-work examples per docs/team/*.md
+- [ ] Replace stub content on all 4 /locations/* pages with driving directions, transit, and local recommendations per docs/locations/*.md
+- [ ] Swap the Visit section map placeholder for a real lazy-loaded Google Maps iframe (or static map image) — see components/sections/Visit.tsx and app/contact/page.tsx
+- [ ] Wire Fresha embed into /book (remove the dashed-border stub) once NEXT_PUBLIC_FRESHA_ACCOUNT_ID is provisioned
+- [ ] Write initial blog posts (aim for 3–6 for launch) per docs/content/blog-roadmap.md
+- [ ] Finalise Privacy + Terms copy with the client (current text is a good-faith placeholder)
 
 ## Post-launch (week 1)
 - [ ] Claim unclaimed Yelp listing

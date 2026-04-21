@@ -33,7 +33,7 @@ export const TEAM: readonly TeamMember[] = [
     alternateName: "Bill",
     title: "Founder & Master Colourist",
     years: 35,
-    portrait: "/images/placeholder/stylist-bulent-portrait.svg",
+    portrait: "/images/photos/bulent.jpg",
     portraitAlt:
       "Portrait of Bülent (Bill), founder and master colourist at Megas Hair Salon, Coquitlam",
     actionImage: "/images/placeholder/stylist-bulent-action.svg",

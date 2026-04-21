@@ -56,6 +56,28 @@ export const localBusinessSchema = {
   areaServed: AREA_SERVED.map((name) => ({ "@type": "City", name })),
 } as const;
 
+export const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SITE.url}/#organization`,
+  name: BUSINESS.name,
+  url: SITE.url,
+  logo: `${SITE.url}/images/logo.png`,
+  foundingDate: BUSINESS.foundingDate,
+  founder: { "@type": "Person", name: BUSINESS.founderStylist },
+  sameAs: [SOCIAL.instagram, SOCIAL.facebook, SOCIAL.google],
+} as const;
+
+export const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE.url}/#website`,
+  url: SITE.url,
+  name: BUSINESS.name,
+  publisher: { "@id": `${SITE.url}/#organization` },
+  inLanguage: "en-CA",
+} as const;
+
 export function breadcrumbSchema(items: { name: string; path?: string }[]) {
   return {
     "@context": "https://schema.org",

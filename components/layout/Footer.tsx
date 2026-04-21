@@ -23,7 +23,7 @@ export function Footer() {
 
   return (
     <footer
-      className="mt-24 md:mt-32 border-t border-border"
+      className="border-t border-border"
       style={{ backgroundColor: "var(--color-bg-alt)" }}
     >
       <div

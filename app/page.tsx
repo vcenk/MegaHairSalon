@@ -1,49 +1,35 @@
+import { pageMetadata } from "@/lib/seo";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { Hero } from "@/components/sections/Hero";
+import { BrandOrigin } from "@/components/sections/BrandOrigin";
+import { ServicesGrid } from "@/components/sections/ServicesGrid";
+import { ReviewsMarquee } from "@/components/sections/ReviewsMarquee";
+import { Artisans } from "@/components/sections/Artisans";
+import { FeaturedWork } from "@/components/sections/FeaturedWork";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { Visit } from "@/components/sections/Visit";
+
+export const metadata = pageMetadata({
+  title: "Hair Salon Coquitlam | Master Colourists Since 1984 | Megas",
+  description:
+    "Award-worthy hair salon in Coquitlam. Master colourists in balayage, blonde, and precision cuts. Turkish artistry since 1984. Book at (778) 858-0396.",
+  path: "/",
+});
+
 export default function Home() {
   return (
-    <div
-      className="mx-auto px-6 py-24 md:py-32"
-      style={{ maxWidth: "var(--container-text)" }}
-    >
-      <p
-        className="text-xs uppercase text-muted"
-        style={{ letterSpacing: "var(--tracking-label)" }}
-      >
-        Scaffold ready · Batch 1 complete
-      </p>
-      <h1
-        className="mt-4 text-5xl md:text-7xl font-display"
-        style={{
-          lineHeight: "var(--leading-display)",
-          letterSpacing: "var(--tracking-display)",
-        }}
-      >
-        Megas Hair Salon
-      </h1>
-      <p
-        className="mt-6 text-lg text-muted"
-        style={{ lineHeight: "var(--leading-body)" }}
-      >
-        Header, footer, and smooth scroll are wired. The homepage sections
-        come in Batch 2 per <code>docs/pages/home.md</code>.
-      </p>
-
-      {/* Filler so the sticky compact header has somewhere to compact to. */}
-      <div
-        className="mt-16 rounded-sm p-10"
-        style={{ backgroundColor: "var(--color-bg-alt)" }}
-        aria-hidden="true"
-      >
-        <p className="text-sm text-muted">
-          Scroll down to see the header shift to its compact variant.
-        </p>
-      </div>
-      <div aria-hidden="true" style={{ height: "120vh" }} />
-      <p
-        className="text-sm text-muted"
-        style={{ lineHeight: "var(--leading-body)" }}
-      >
-        End of placeholder. Footer is below.
-      </p>
-    </div>
+    <>
+      <JsonLd data={organizationSchema} />
+      <JsonLd data={websiteSchema} />
+      <Hero />
+      <BrandOrigin />
+      <ServicesGrid />
+      <ReviewsMarquee />
+      <Artisans />
+      <FeaturedWork />
+      <Testimonials />
+      <Visit />
+    </>
   );
 }

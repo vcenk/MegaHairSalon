@@ -1,14 +1,20 @@
-import { MapPin } from "lucide-react";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { CONTACT } from "@/lib/constants";
 
-function directionsHref() {
+function fullAddress() {
   const { streetAddress, addressLocality, addressRegion, postalCode } =
     CONTACT.address;
-  const q = `${streetAddress}, ${addressLocality}, ${addressRegion} ${postalCode}`;
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+  return `${streetAddress}, ${addressLocality}, ${addressRegion} ${postalCode}`;
+}
+
+function directionsHref() {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress())}`;
+}
+
+function mapEmbedSrc() {
+  return `https://www.google.com/maps?q=${encodeURIComponent(fullAddress())}&output=embed`;
 }
 
 export function Visit() {
@@ -69,53 +75,16 @@ export function Visit() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <a
-            href={directionsHref()}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Open Megas Hair Salon location in Google Maps"
-            className="group relative block w-full aspect-[4/3] md:aspect-[5/6] lg:aspect-[4/5] overflow-hidden border border-border bg-bg-alt"
-          >
-            {/* Stylized map placeholder — swap for a real embed or static map image at launch */}
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 opacity-70"
-              style={{
-                backgroundImage:
-                  "repeating-linear-gradient(45deg, transparent 0 18px, var(--color-border) 18px 19px), repeating-linear-gradient(-45deg, transparent 0 28px, var(--color-border) 28px 29px)",
-              }}
+          <div className="relative w-full aspect-[4/3] md:aspect-[5/6] lg:aspect-[4/5] overflow-hidden border border-border bg-bg-alt">
+            <iframe
+              src={mapEmbedSrc()}
+              title={`Map to Megas Hair Salon, ${fullAddress()}`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 h-full w-full"
+              style={{ border: 0 }}
             />
-            <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-              <span
-                className="inline-flex items-center justify-center size-14 rounded-full"
-                style={{ backgroundColor: "var(--color-accent)" }}
-              >
-                <MapPin
-                  size={26}
-                  strokeWidth={1.5}
-                  style={{ color: "var(--color-background)" }}
-                />
-              </span>
-              <p
-                className="mt-5 font-display text-2xl md:text-3xl text-foreground"
-                style={{
-                  lineHeight: "var(--leading-tight)",
-                  letterSpacing: "var(--tracking-display)",
-                }}
-              >
-                {CONTACT.address.addressLocality}, {CONTACT.address.addressRegion}
-              </p>
-              <p className="mt-2 text-sm text-muted">
-                {CONTACT.address.streetAddress}
-              </p>
-              <span
-                className="mt-6 text-[0.7rem] uppercase text-foreground group-hover:text-accent transition-colors underline underline-offset-4"
-                style={{ letterSpacing: "var(--tracking-label)" }}
-              >
-                View on Google Maps →
-              </span>
-            </div>
-          </a>
+          </div>
         </FadeIn>
       </div>
     </section>

@@ -5,32 +5,32 @@ import { FadeIn } from "@/components/motion/FadeIn";
 
 const WORKS = [
   {
-    src: "/images/placeholder/result-balayage-2.svg",
+    src: "/images/photos/result-balayage-2.jpg",
     alt: "Hand-painted balayage close-up by master colourists at Megas Hair Salon, Coquitlam",
     span: "col-span-2 row-span-2",
   },
   {
-    src: "/images/placeholder/result-blonde-2.svg",
+    src: "/images/photos/result-blonde-2.jpg",
     alt: "Toned blonde with soft root shadow at Megas Hair Salon, Coquitlam",
     span: "col-span-2 row-span-1",
   },
   {
-    src: "/images/placeholder/result-precision-cut-2.svg",
+    src: "/images/photos/result-precision-cut-2.jpg",
     alt: "Precision short cut by Gazi at Megas Hair Salon, Coquitlam",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "/images/placeholder/result-hair-color-2.svg",
+    src: "/images/photos/result-hair-color-2.jpg",
     alt: "Rich copper hair colour result at Megas Hair Salon, Coquitlam",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "/images/placeholder/result-keratin-1.svg",
+    src: "/images/photos/result-keratin-1.jpg",
     alt: "Smooth, keratin-treated hair finish at Megas Hair Salon, Coquitlam",
     span: "col-span-2 row-span-1",
   },
   {
-    src: "/images/placeholder/result-blow-dry-1.svg",
+    src: "/images/photos/result-blow-dry-1.jpg",
     alt: "Polished blow-dry styling by Emir at Megas Hair Salon, Coquitlam",
     span: "col-span-2 row-span-1",
   },

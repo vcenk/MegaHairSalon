@@ -14,51 +14,51 @@ export const metadata = pageMetadata({
 
 const IMAGES = [
   {
-    src: "/images/placeholder/result-balayage-1.svg",
+    src: "/images/photos/result-balayage-1.jpg",
     alt: "Hand-painted balayage result by master colourists at Megas Hair Salon, Coquitlam",
   },
   {
-    src: "/images/placeholder/result-blonde-1.svg",
+    src: "/images/photos/result-blonde-1.jpg",
     alt: "Platinum blonde transformation by Bülent at Megas Hair Salon, Coquitlam",
   },
   {
-    src: "/images/placeholder/salon-interior-1.svg",
+    src: "/images/photos/salon-interior-1.jpg",
     alt: "Megas Hair Salon interior — styling floor, Coquitlam",
   },
   {
-    src: "/images/placeholder/result-precision-cut-1.svg",
+    src: "/images/photos/result-precision-cut-1.jpg",
     alt: "Women's precision cut with soft layers by Gazi, Megas Coquitlam",
   },
   {
-    src: "/images/placeholder/result-hair-color-1.svg",
+    src: "/images/photos/result-hair-color-1.jpg",
     alt: "Rich brunette custom hair colour by master colourists, Megas Coquitlam",
   },
   {
-    src: "/images/placeholder/salon-interior-2.svg",
+    src: "/images/photos/salon-interior-2.jpg",
     alt: "Megas Hair Salon styling chair and mirror detail, Coquitlam",
   },
   {
-    src: "/images/placeholder/result-balayage-2.svg",
+    src: "/images/photos/result-balayage-2.jpg",
     alt: "Close-up of hand-painted balayage colour placement, Megas Coquitlam",
   },
   {
-    src: "/images/placeholder/result-blonde-2.svg",
+    src: "/images/photos/result-blonde-2.jpg",
     alt: "Toned blonde with natural root depth, Megas Coquitlam",
   },
   {
-    src: "/images/placeholder/salon-interior-3.svg",
+    src: "/images/photos/salon-interior-3.jpg",
     alt: "Megas Hair Salon wash station and Kérastase product shelf, Coquitlam",
   },
   {
-    src: "/images/placeholder/result-precision-cut-2.svg",
+    src: "/images/photos/result-precision-cut-2.jpg",
     alt: "Men's precision haircut with sharp lines by Gazi, Megas Coquitlam",
   },
   {
-    src: "/images/placeholder/result-hair-color-2.svg",
+    src: "/images/photos/result-hair-color-2.jpg",
     alt: "Copper red colour work by Emir, Megas Coquitlam",
   },
   {
-    src: "/images/placeholder/salon-interior-4.svg",
+    src: "/images/photos/salon-interior-4.jpg",
     alt: "Megas Hair Salon tools and materials detail, Coquitlam",
   },
 ] as const;

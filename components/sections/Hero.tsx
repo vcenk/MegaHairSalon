@@ -39,12 +39,29 @@ export function Hero() {
         transition={{ duration: reduced ? 0 : 1.2, ease: [0.16, 1, 0.3, 1] }}
       >
         <Image
-          src="/images/placeholder/hero.svg"
+          src="/images/photos/hero.jpg"
           alt="Megas Hair Salon interior — master colourists in Coquitlam, BC"
           fill
           priority
           sizes="100vw"
           className="object-cover"
+        />
+        {/* Legibility scrim — warm off-white from the left, fading to transparent */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(250,248,245,0.96) 0%, rgba(250,248,245,0.82) 35%, rgba(250,248,245,0.35) 65%, rgba(250,248,245,0.05) 100%)",
+          }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(26,26,26,0) 60%, rgba(26,26,26,0.15) 100%)",
+          }}
         />
       </motion.div>
 

@@ -36,7 +36,7 @@ export const SERVICES: readonly Service[] = [
     teaser: "Hand-painted dimension",
     priceFrom: 250,
     priceMax: 450,
-    image: "/images/placeholder/result-balayage-1.svg",
+    image: "/images/photos/result-balayage-1.jpg",
     imageAlt:
       "Hand-painted balayage result with soft dimension, by master colourists at Megas Hair Salon, Coquitlam",
     metaTitle: "Balayage Coquitlam | Master Colourists | Megas Hair Salon",
@@ -79,19 +79,19 @@ export const SERVICES: readonly Service[] = [
     stylistSlugs: ["bulent-bill", "gazi", "emir"],
     gallery: [
       {
-        src: "/images/placeholder/result-balayage-1.svg",
+        src: "/images/photos/result-balayage-1.jpg",
         alt: "Long blonde balayage, hand-painted dimension — Megas Hair Salon, Coquitlam",
       },
       {
-        src: "/images/placeholder/result-balayage-2.svg",
+        src: "/images/photos/result-balayage-2.jpg",
         alt: "Close-up of balayage colour placement by Bülent at Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-blonde-1.svg",
+        src: "/images/photos/result-blonde-1.jpg",
         alt: "Lived-in blonde balayage with soft regrowth, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-hair-color-1.svg",
+        src: "/images/photos/result-hair-color-1.jpg",
         alt: "Brunette with caramel balayage, toned for warmth, Megas Coquitlam",
       },
     ],
@@ -134,7 +134,7 @@ export const SERVICES: readonly Service[] = [
     teaser: "Transformative light, fearlessly toned",
     priceFrom: 280,
     priceMax: 600,
-    image: "/images/placeholder/result-blonde-1.svg",
+    image: "/images/photos/result-blonde-1.jpg",
     imageAlt:
       "Platinum blonde transformation with healthy lift and cool tone, by Bülent at Megas Hair Salon, Coquitlam",
     metaTitle:
@@ -185,19 +185,19 @@ export const SERVICES: readonly Service[] = [
     stylistSlugs: ["bulent-bill", "gazi", "emir"],
     gallery: [
       {
-        src: "/images/placeholder/result-blonde-1.svg",
+        src: "/images/photos/result-blonde-1.jpg",
         alt: "Bright platinum blonde transformation by Bülent, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-blonde-2.svg",
+        src: "/images/photos/result-blonde-2.jpg",
         alt: "Toned blonde with root shadow, lived-in finish — Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-balayage-1.svg",
+        src: "/images/photos/result-balayage-1.jpg",
         alt: "Blonde balayage with hand-painted dimension, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-balayage-2.svg",
+        src: "/images/photos/result-balayage-2.jpg",
         alt: "Cool-toned blonde foils, no brass, Megas Coquitlam",
       },
     ],
@@ -235,7 +235,7 @@ export const SERVICES: readonly Service[] = [
     name: "Precision Cut",
     teaser: "Sculpted for your bone structure",
     priceFrom: 85,
-    image: "/images/placeholder/result-precision-cut-1.svg",
+    image: "/images/photos/result-precision-cut-1.jpg",
     imageAlt:
       "Precision haircut with clean lines and soft movement, by master stylists at Megas Hair Salon, Coquitlam",
     metaTitle: "Precision Haircuts Coquitlam | Master Stylists | Megas",
@@ -259,15 +259,15 @@ export const SERVICES: readonly Service[] = [
     stylistSlugs: ["bulent-bill", "gazi", "emir"],
     gallery: [
       {
-        src: "/images/placeholder/result-precision-cut-1.svg",
+        src: "/images/photos/result-precision-cut-1.jpg",
         alt: "Women's precision cut with soft layers by Gazi, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-precision-cut-2.svg",
+        src: "/images/photos/result-precision-cut-2.jpg",
         alt: "Men's precision haircut, sharp lines and texture, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-blow-dry-1.svg",
+        src: "/images/photos/result-blow-dry-1.jpg",
         alt: "Fresh cut finished with a polished blow dry, Megas Coquitlam",
       },
     ],
@@ -305,7 +305,7 @@ export const SERVICES: readonly Service[] = [
     name: "Hair Colour",
     teaser: "Rich, custom-composed colour",
     priceFrom: 180,
-    image: "/images/placeholder/result-hair-color-1.svg",
+    image: "/images/photos/result-hair-color-1.jpg",
     imageAlt:
       "Rich brunette hair colour with custom tone, by master colourists at Megas Hair Salon, Coquitlam",
     metaTitle: "Hair Colour Coquitlam | Master Colourists | Megas Hair Salon",
@@ -329,15 +329,15 @@ export const SERVICES: readonly Service[] = [
     stylistSlugs: ["bulent-bill", "gazi", "emir"],
     gallery: [
       {
-        src: "/images/placeholder/result-hair-color-1.svg",
+        src: "/images/photos/result-hair-color-1.jpg",
         alt: "Rich brunette single-process colour, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-hair-color-2.svg",
+        src: "/images/photos/result-hair-color-2.jpg",
         alt: "Copper red colour with custom warmth, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-root-touch-up-1.svg",
+        src: "/images/photos/result-root-touch-up-1.jpg",
         alt: "Seamless grey-coverage root colour, Megas Coquitlam",
       },
     ],
@@ -376,7 +376,7 @@ export const SERVICES: readonly Service[] = [
     teaser: "Frizz-free for months",
     priceFrom: 300,
     priceMax: 400,
-    image: "/images/placeholder/result-keratin-1.svg",
+    image: "/images/photos/result-keratin-1.jpg",
     imageAlt:
       "Keratin-smoothed hair with glossy finish and reduced frizz, Megas Hair Salon, Coquitlam",
     metaTitle:
@@ -400,15 +400,15 @@ export const SERVICES: readonly Service[] = [
     stylistSlugs: ["bulent-bill", "gazi", "emir"],
     gallery: [
       {
-        src: "/images/placeholder/result-keratin-1.svg",
+        src: "/images/photos/result-keratin-1.jpg",
         alt: "Keratin smoothing result, polished finish — Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-blow-dry-1.svg",
+        src: "/images/photos/result-blow-dry-1.jpg",
         alt: "Post-keratin blowout with extended hold, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-restorative-1.svg",
+        src: "/images/photos/result-restorative-1.jpg",
         alt: "Healthy-hair finish after keratin treatment, Megas Coquitlam",
       },
     ],
@@ -446,7 +446,7 @@ export const SERVICES: readonly Service[] = [
     name: "Blow Dry",
     teaser: "Polished, lasting styling",
     priceFrom: 65,
-    image: "/images/placeholder/result-blow-dry-1.svg",
+    image: "/images/photos/result-blow-dry-1.jpg",
     imageAlt:
       "Polished blow-dry styling with lasting hold, by Emir at Megas Hair Salon, Coquitlam",
     metaTitle:
@@ -471,15 +471,15 @@ export const SERVICES: readonly Service[] = [
     stylistSlugs: ["emir", "gazi", "bulent-bill"],
     gallery: [
       {
-        src: "/images/placeholder/result-blow-dry-1.svg",
+        src: "/images/photos/result-blow-dry-1.jpg",
         alt: "Finished blowout with lasting shape by Emir, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-precision-cut-1.svg",
+        src: "/images/photos/result-precision-cut-1.jpg",
         alt: "Blow-dry finish on a layered cut, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-keratin-1.svg",
+        src: "/images/photos/result-keratin-1.jpg",
         alt: "Smooth, glossy blowout on keratin-treated hair, Megas Coquitlam",
       },
     ],
@@ -517,7 +517,7 @@ export const SERVICES: readonly Service[] = [
     name: "Root Touch Up",
     teaser: "Seamless colour refresh",
     priceFrom: 120,
-    image: "/images/placeholder/result-root-touch-up-1.svg",
+    image: "/images/photos/result-root-touch-up-1.jpg",
     imageAlt:
       "Seamlessly blended root touch-up with custom-mixed colour, Megas Hair Salon, Coquitlam",
     metaTitle:
@@ -541,15 +541,15 @@ export const SERVICES: readonly Service[] = [
     stylistSlugs: ["bulent-bill", "gazi", "emir"],
     gallery: [
       {
-        src: "/images/placeholder/result-root-touch-up-1.svg",
+        src: "/images/photos/result-root-touch-up-1.jpg",
         alt: "Seamless regrowth blend, no line of demarcation, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-hair-color-1.svg",
+        src: "/images/photos/result-hair-color-1.jpg",
         alt: "Brunette root refresh with tone-matched colour, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-blonde-2.svg",
+        src: "/images/photos/result-blonde-2.jpg",
         alt: "Blonde root touch-up with tone refresh, Megas Coquitlam",
       },
     ],
@@ -587,7 +587,7 @@ export const SERVICES: readonly Service[] = [
     name: "Restorative Treatment",
     teaser: "Deep conditioning for damaged hair",
     priceFrom: 90,
-    image: "/images/placeholder/result-restorative-1.svg",
+    image: "/images/photos/result-restorative-1.jpg",
     imageAlt:
       "Restored, glossy hair after bond-rebuilding treatment at Megas Hair Salon, Coquitlam",
     metaTitle:
@@ -612,15 +612,15 @@ export const SERVICES: readonly Service[] = [
     stylistSlugs: ["bulent-bill", "gazi", "emir"],
     gallery: [
       {
-        src: "/images/placeholder/result-restorative-1.svg",
+        src: "/images/photos/result-restorative-1.jpg",
         alt: "Post-treatment shine after bond rebuilding, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-keratin-1.svg",
+        src: "/images/photos/result-keratin-1.jpg",
         alt: "Healthy hair finish following restorative service, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-blonde-1.svg",
+        src: "/images/photos/result-blonde-1.jpg",
         alt: "Blonde hair restored with bond-rebuilding treatment, Megas Coquitlam",
       },
     ],

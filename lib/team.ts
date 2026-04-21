@@ -61,19 +61,19 @@ export const TEAM: readonly TeamMember[] = [
     ],
     gallery: [
       {
-        src: "/images/placeholder/result-balayage-1.svg",
+        src: "/images/photos/result-balayage-1.jpg",
         alt: "Balayage work by Bülent at Megas Hair Salon, Coquitlam",
       },
       {
-        src: "/images/placeholder/result-blonde-1.svg",
+        src: "/images/photos/result-blonde-1.jpg",
         alt: "Platinum blonde transformation by Bülent, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-blonde-2.svg",
+        src: "/images/photos/result-blonde-2.jpg",
         alt: "Lived-in blonde with root depth by Bülent, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-balayage-2.svg",
+        src: "/images/photos/result-balayage-2.jpg",
         alt: "Close-up of hand-painted balayage by Bülent, Megas Coquitlam",
       },
     ],
@@ -120,19 +120,19 @@ export const TEAM: readonly TeamMember[] = [
     ],
     gallery: [
       {
-        src: "/images/placeholder/result-precision-cut-1.svg",
+        src: "/images/photos/result-precision-cut-1.jpg",
         alt: "Precision cut by Gazi at Megas Hair Salon, Coquitlam",
       },
       {
-        src: "/images/placeholder/result-precision-cut-2.svg",
+        src: "/images/photos/result-precision-cut-2.jpg",
         alt: "Men's precision haircut by Gazi, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-hair-color-1.svg",
+        src: "/images/photos/result-hair-color-1.jpg",
         alt: "Custom colour placement by Gazi, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-balayage-2.svg",
+        src: "/images/photos/result-balayage-2.jpg",
         alt: "Sculpted colour detail by Gazi, Megas Coquitlam",
       },
     ],
@@ -180,19 +180,19 @@ export const TEAM: readonly TeamMember[] = [
     ],
     gallery: [
       {
-        src: "/images/placeholder/result-blow-dry-1.svg",
+        src: "/images/photos/result-blow-dry-1.jpg",
         alt: "Signature blowout by Emir at Megas Hair Salon, Coquitlam",
       },
       {
-        src: "/images/placeholder/result-hair-color-2.svg",
+        src: "/images/photos/result-hair-color-2.jpg",
         alt: "Copper colour work by Emir, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-keratin-1.svg",
+        src: "/images/photos/result-keratin-1.jpg",
         alt: "Post-keratin smooth finish styled by Emir, Megas Coquitlam",
       },
       {
-        src: "/images/placeholder/result-precision-cut-2.svg",
+        src: "/images/photos/result-precision-cut-2.jpg",
         alt: "Modern men's styling by Emir, Megas Coquitlam",
       },
     ],
@@ -237,19 +237,19 @@ export const TEAM: readonly TeamMember[] = [
     ],
     gallery: [
       {
-        src: "/images/placeholder/salon-interior-1.svg",
+        src: "/images/photos/salon-interior-1.jpg",
         alt: "Megas Hair Salon interior, styling floor — Coquitlam",
       },
       {
-        src: "/images/placeholder/salon-interior-2.svg",
+        src: "/images/photos/salon-interior-2.jpg",
         alt: "Megas Hair Salon styling chair and mirror detail, Coquitlam",
       },
       {
-        src: "/images/placeholder/salon-interior-3.svg",
+        src: "/images/photos/salon-interior-3.jpg",
         alt: "Megas Hair Salon wash station and product shelf, Coquitlam",
       },
       {
-        src: "/images/placeholder/salon-interior-4.svg",
+        src: "/images/photos/salon-interior-4.jpg",
         alt: "Megas Hair Salon detail shot — tools and materials, Coquitlam",
       },
     ],

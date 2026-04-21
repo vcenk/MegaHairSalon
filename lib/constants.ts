@@ -1,7 +1,7 @@
 export const SITE = {
   url: "https://megashairsalon.ca",
   locale: "en_CA",
-  ogImage: "/og-default.jpg",
+  ogImage: "/images/photos/og-default.jpg",
 } as const;
 
 export const BUSINESS = {

@@ -40,7 +40,7 @@ export function Hero() {
       >
         <Image
           src="/images/placeholder/hero.svg"
-          alt="Megas Hair Salon interior"
+          alt="Megas Hair Salon interior — master colourists in Coquitlam, BC"
           fill
           priority
           sizes="100vw"

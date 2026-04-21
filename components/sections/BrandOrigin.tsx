@@ -13,7 +13,7 @@ export function BrandOrigin() {
         <FadeIn className="relative w-full aspect-[4/5] overflow-hidden bg-bg-alt">
           <Image
             src="/images/placeholder/salon-interior-2.svg"
-            alt="Megas Hair Salon interior detail"
+            alt="Megas Hair Salon styling floor, Coquitlam — Turkish hair salon since 1984"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"

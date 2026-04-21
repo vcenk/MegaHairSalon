@@ -37,7 +37,7 @@ export default function TeamHubPage() {
                 <div className="relative w-full aspect-[4/5] overflow-hidden bg-bg-alt">
                   <Image
                     src={person.portrait}
-                    alt={`${person.name}, ${person.title}`}
+                    alt={person.portraitAlt}
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover transition-transform duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"

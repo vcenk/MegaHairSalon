@@ -13,18 +13,54 @@ export const metadata = pageMetadata({
 });
 
 const IMAGES = [
-  "/images/placeholder/result-balayage-1.svg",
-  "/images/placeholder/result-blonde-1.svg",
-  "/images/placeholder/salon-interior-1.svg",
-  "/images/placeholder/result-precision-cut-1.svg",
-  "/images/placeholder/result-hair-color-1.svg",
-  "/images/placeholder/salon-interior-2.svg",
-  "/images/placeholder/result-balayage-2.svg",
-  "/images/placeholder/result-blonde-2.svg",
-  "/images/placeholder/salon-interior-3.svg",
-  "/images/placeholder/result-precision-cut-2.svg",
-  "/images/placeholder/result-hair-color-2.svg",
-  "/images/placeholder/salon-interior-4.svg",
+  {
+    src: "/images/placeholder/result-balayage-1.svg",
+    alt: "Hand-painted balayage result by master colourists at Megas Hair Salon, Coquitlam",
+  },
+  {
+    src: "/images/placeholder/result-blonde-1.svg",
+    alt: "Platinum blonde transformation by Bülent at Megas Hair Salon, Coquitlam",
+  },
+  {
+    src: "/images/placeholder/salon-interior-1.svg",
+    alt: "Megas Hair Salon interior — styling floor, Coquitlam",
+  },
+  {
+    src: "/images/placeholder/result-precision-cut-1.svg",
+    alt: "Women's precision cut with soft layers by Gazi, Megas Coquitlam",
+  },
+  {
+    src: "/images/placeholder/result-hair-color-1.svg",
+    alt: "Rich brunette custom hair colour by master colourists, Megas Coquitlam",
+  },
+  {
+    src: "/images/placeholder/salon-interior-2.svg",
+    alt: "Megas Hair Salon styling chair and mirror detail, Coquitlam",
+  },
+  {
+    src: "/images/placeholder/result-balayage-2.svg",
+    alt: "Close-up of hand-painted balayage colour placement, Megas Coquitlam",
+  },
+  {
+    src: "/images/placeholder/result-blonde-2.svg",
+    alt: "Toned blonde with natural root depth, Megas Coquitlam",
+  },
+  {
+    src: "/images/placeholder/salon-interior-3.svg",
+    alt: "Megas Hair Salon wash station and Kérastase product shelf, Coquitlam",
+  },
+  {
+    src: "/images/placeholder/result-precision-cut-2.svg",
+    alt: "Men's precision haircut with sharp lines by Gazi, Megas Coquitlam",
+  },
+  {
+    src: "/images/placeholder/result-hair-color-2.svg",
+    alt: "Copper red colour work by Emir, Megas Coquitlam",
+  },
+  {
+    src: "/images/placeholder/salon-interior-4.svg",
+    alt: "Megas Hair Salon tools and materials detail, Coquitlam",
+  },
 ] as const;
 
 export default function GalleryPage() {
@@ -45,14 +81,14 @@ export default function GalleryPage() {
         style={{ maxWidth: "var(--container-max)" }}
       >
         <FadeIn className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-          {IMAGES.map((src, i) => (
+          {IMAGES.map((img, i) => (
             <div
               key={i}
               className="relative aspect-[4/5] overflow-hidden bg-bg-alt group"
             >
               <Image
-                src={src}
-                alt="Gallery entry"
+                src={img.src}
+                alt={img.alt}
                 fill
                 sizes="(min-width: 768px) 33vw, 50vw"
                 className="object-cover transition-transform duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"

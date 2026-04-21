@@ -56,7 +56,7 @@ export default function AboutPage() {
           <FadeIn className="md:order-2 relative w-full aspect-[4/5] overflow-hidden bg-bg-alt">
             <Image
               src="/images/placeholder/salon-interior-3.svg"
-              alt="Megas Hair Salon — archive detail"
+              alt="Megas Hair Salon archive — Turkish hair house established in Istanbul, 1984"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-cover"
@@ -108,7 +108,7 @@ export default function AboutPage() {
           <FadeIn className="relative w-full aspect-[4/5] overflow-hidden bg-bg-alt">
             <Image
               src="/images/placeholder/salon-interior-1.svg"
-              alt="Megas Hair Salon — Coquitlam interior"
+              alt="Megas Hair Salon Coquitlam interior — styling floor at 150-1169 Pacific St"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-cover"

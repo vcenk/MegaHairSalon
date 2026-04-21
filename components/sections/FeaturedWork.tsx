@@ -6,32 +6,32 @@ import { FadeIn } from "@/components/motion/FadeIn";
 const WORKS = [
   {
     src: "/images/placeholder/result-balayage-2.svg",
-    alt: "Hand-painted balayage close-up",
+    alt: "Hand-painted balayage close-up by master colourists at Megas Hair Salon, Coquitlam",
     span: "col-span-2 row-span-2",
   },
   {
     src: "/images/placeholder/result-blonde-2.svg",
-    alt: "Toned blonde with root depth",
+    alt: "Toned blonde with soft root shadow at Megas Hair Salon, Coquitlam",
     span: "col-span-2 row-span-1",
   },
   {
     src: "/images/placeholder/result-precision-cut-2.svg",
-    alt: "Precision short cut",
+    alt: "Precision short cut by Gazi at Megas Hair Salon, Coquitlam",
     span: "col-span-1 row-span-1",
   },
   {
     src: "/images/placeholder/result-hair-color-2.svg",
-    alt: "Rich copper colour result",
+    alt: "Rich copper hair colour result at Megas Hair Salon, Coquitlam",
     span: "col-span-1 row-span-1",
   },
   {
     src: "/images/placeholder/result-keratin-1.svg",
-    alt: "Keratin smoothed hair",
+    alt: "Smooth, keratin-treated hair finish at Megas Hair Salon, Coquitlam",
     span: "col-span-2 row-span-1",
   },
   {
     src: "/images/placeholder/result-blow-dry-1.svg",
-    alt: "Polished blow-dry finish",
+    alt: "Polished blow-dry styling by Emir at Megas Hair Salon, Coquitlam",
     span: "col-span-2 row-span-1",
   },
 ] as const;

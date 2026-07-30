@@ -46,6 +46,12 @@ export const HOURS: Record<
   sunday: null,
 } as const;
 
+export const BOOKING = {
+  // Phorest hosted online-booking page. Services and pricing live here.
+  url: "https://phorest.com/book/salons/megashairsalon",
+  provider: "Phorest",
+} as const;
+
 export const SOCIAL = {
   instagram: "https://www.instagram.com/megashairsalon",
   facebook: "https://www.facebook.com/megashairsalon",

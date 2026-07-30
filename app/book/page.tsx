@@ -3,7 +3,7 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, BOOKING } from "@/lib/constants";
 
 export const metadata = pageMetadata({
   title: "Book an Appointment | Megas Hair Salon Coquitlam",
@@ -26,15 +26,19 @@ export default function BookPage() {
         align="center"
       />
 
-      {/* Fresha embed placeholder */}
+      {/* Phorest online booking.
+          Direct link to the hosted booking page is the reliable integration —
+          it carries the live service menu and pricing. An inline iframe embed
+          can replace this later if Phorest confirms framing is allowed for the
+          account (X-Frame-Options / CSP must permit it); until verified, we
+          link out so the CTA never renders blank. */}
       <section
         className="mx-auto px-6 md:px-10 py-10 md:py-16"
         style={{ maxWidth: "var(--container-narrow)" }}
       >
         <FadeIn>
-          {/* TODO: Replace with Fresha embed once NEXT_PUBLIC_FRESHA_ACCOUNT_ID is provisioned (see docs/LAUNCH-BLOCKERS.md). Fresha snippet goes here as a <script> + <div id="fresha-widget"> or an iframe per their current integration docs. */}
           <div
-            className="border-2 border-dashed p-10 md:p-14 text-center"
+            className="border p-10 md:p-14 text-center"
             style={{ borderColor: "var(--color-border)" }}
           >
             <Eyebrow accent>Online booking</Eyebrow>
@@ -45,28 +49,31 @@ export default function BookPage() {
                 letterSpacing: "var(--tracking-display)",
               }}
             >
-              Our Fresha booking widget lands here.
+              Book online, anytime.
             </h2>
             <p
               className="mt-5 text-muted md:text-lg max-w-xl mx-auto"
               style={{ lineHeight: "var(--leading-body)" }}
             >
-              We&apos;re finalising our online scheduling. In the meantime,
-              the fastest way to book is by phone — most same-week slots are
-              filled this way.
+              See real-time availability, pick your stylist and service, and
+              reserve your chair through our booking system. Full service menu
+              and pricing are listed there.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <CtaButton href={`tel:${CONTACT.phoneHref}`} external>
-                Call {CONTACT.phone}
+              <CtaButton href={BOOKING.url} external>
+                Book Now
               </CtaButton>
               <CtaButton
-                href={`mailto:${CONTACT.email}`}
+                href={`tel:${CONTACT.phoneHref}`}
                 variant="secondary"
                 external
               >
-                Email us
+                Call {CONTACT.phone}
               </CtaButton>
             </div>
+            <p className="mt-6 text-sm text-muted">
+              Prefer to call? We&apos;re here Mon–Sat, 10am–6pm.
+            </p>
           </div>
         </FadeIn>
       </section>

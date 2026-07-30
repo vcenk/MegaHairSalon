@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Star, MapPin, Phone, Mail } from "lucide-react";
 import { BUSINESS, CONTACT, SOCIAL } from "@/lib/constants";
-import { FOOTER_SERVICES } from "@/lib/nav";
+import { FOOTER_SERVICES, FOOTER_EXPLORE } from "@/lib/nav";
 import { Logo } from "./Logo";
 import { InstagramIcon, FacebookIcon } from "./BrandIcons";
 
@@ -27,11 +27,11 @@ export function Footer() {
       style={{ backgroundColor: "var(--color-bg-alt)" }}
     >
       <div
-        className="mx-auto px-6 md:px-10 py-16 md:py-20 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-10"
+        className="mx-auto px-6 md:px-10 py-16 md:py-20 grid grid-cols-2 md:grid-cols-5 gap-12 md:gap-10"
         style={{ maxWidth: "var(--container-max)" }}
       >
         {/* Column 1 — Brand */}
-        <div>
+        <div className="col-span-2 md:col-span-1">
           <Logo size="lg" />
           <p className="mt-5 text-sm text-muted leading-relaxed">
             Since 1984.
@@ -40,7 +40,23 @@ export function Footer() {
           </p>
         </div>
 
-        {/* Column 2 — Services */}
+        {/* Column 2 — Explore */}
+        <div>
+          <span className={LABEL_CLASS} style={LABEL_STYLE}>
+            Explore
+          </span>
+          <ul className="flex flex-col gap-3">
+            {FOOTER_EXPLORE.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className={LINK_CLASS}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Column 3 — Services */}
         <div>
           <span className={LABEL_CLASS} style={LABEL_STYLE}>
             Services
@@ -56,7 +72,7 @@ export function Footer() {
           </ul>
         </div>
 
-        {/* Column 3 — Visit */}
+        {/* Column 4 — Visit */}
         <div>
           <span className={LABEL_CLASS} style={LABEL_STYLE}>
             Visit
@@ -112,7 +128,7 @@ export function Footer() {
           </Link>
         </div>
 
-        {/* Column 4 — Connect */}
+        {/* Column 5 — Connect */}
         <div>
           <span className={LABEL_CLASS} style={LABEL_STYLE}>
             Connect

@@ -8,6 +8,17 @@ export const PRIMARY_NAV: readonly NavItem[] = [
   { label: "Contact", href: "/contact" },
 ] as const;
 
+// Zazou-style discovery links — surfaced in the footer so visitors can reach
+// the deeper, informational pages (story, team, work, locations) at a glance.
+export const FOOTER_EXPLORE: readonly NavItem[] = [
+  { label: "Our Story", href: "/about" },
+  { label: "The Team", href: "/team" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Locations", href: "/locations" },
+  { label: "Journal", href: "/blog" },
+] as const;
+
 export const FOOTER_SERVICES: readonly NavItem[] = [
   { label: "Balayage", href: "/services/balayage-coquitlam" },
   { label: "Blonde Specialist", href: "/services/blonde-specialist-coquitlam" },

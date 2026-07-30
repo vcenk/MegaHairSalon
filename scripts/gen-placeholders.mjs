@@ -12,16 +12,16 @@ const OUT = join(__dirname, "..", "public", "images", "placeholder");
 mkdirSync(OUT, { recursive: true });
 
 const PALETTE = {
-  bg: "#FAF8F5",
-  bgAlt: "#F2EEE7",
-  bgDeep: "#E5DFD5",
-  ink: "#1A1A1A",
+  bg: "#FFFFFF",
+  bgAlt: "#ECE7DD",
+  bgDeep: "#E4DFD5",
+  ink: "#1C1C1C",
   inkSoft: "#3D3A36",
-  muted: "#6B6661",
+  muted: "#6E6E6E",
   border: "#D6CEC0",
-  accent: "#B87333",
-  accentDark: "#8A5524",
-  accentSoft: "#F5E8D8",
+  accent: "#B0925E",
+  accentDark: "#8C7043",
+  accentSoft: "#F1E9DA",
 };
 
 const write = (name, svg) =>

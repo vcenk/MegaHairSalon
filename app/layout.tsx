@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Jost, Inter } from "next/font/google";
 import { SITE, BUSINESS } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -7,10 +7,12 @@ import { SmoothScroll } from "@/components/motion/SmoothScroll";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+// Jost — a geometric (Futura-style) sans for display type: thin, wide-tracked
+// uppercase headlines in the Salon Haze idiom (see docs/01-design-system.md).
+const jost = Jost({
+  variable: "--font-jost",
   subsets: ["latin"],
-  weight: ["300", "500"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#B87333",
+  themeColor: "#FFFFFF",
   colorScheme: "light",
 };
 
@@ -64,7 +66,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" className={`${jost.variable} ${inter.variable}`}>
       <body>
         <SmoothScroll />
         <LocalBusinessSchema />

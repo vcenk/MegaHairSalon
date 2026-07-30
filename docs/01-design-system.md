@@ -1,10 +1,16 @@
 # 01 — Design System
 
+> **2026 redesign — "Salon Haze" direction.** The client asked for the clean,
+> airy look of salonhaze.com. This document was updated to that idiom: a bright
+> white canvas, warm greige section bands, a geometric sans set in wide-tracked
+> uppercase, and fully-rounded (pill) buttons — no serif. Reference screenshots
+> live with the client; see docs/redesign-plan.md for scope.
+
 ## Design Principles
 
 1. **Whitespace is the luxury.** Generous padding, narrow content widths, room to breathe.
-2. **Typography over decoration.** A great serif and clean sans do more than any flourish.
-3. **Imagery is non-negotiable.** Every photo earns its place — no stock fillers.
+2. **Typography over decoration.** A thin, wide-tracked geometric sans in uppercase carries the brand — no flourish, no serif.
+3. **Imagery is non-negotiable.** Every photo earns its place — full-bleed where it can be — no stock fillers.
 4. **Motion is restraint.** Every animation has purpose; nothing bounces.
 5. **Speed is premium.** Slow site = cheap brand.
 
@@ -14,16 +20,16 @@
 
 ```css
 /* Base */
---color-bg:           #FAF8F5;  /* Warm off-white — never #FFFFFF */
---color-bg-alt:       #F2EEE7;  /* Section backgrounds */
---color-text:         #1A1A1A;  /* Near-black — never pure black */
---color-text-muted:   #6B6661;
---color-border:       #E5DFD5;
+--color-bg:           #FFFFFF;  /* Bright white canvas — the Haze look */
+--color-bg-alt:       #ECE7DD;  /* Warm greige — alternating section bands */
+--color-text:         #1C1C1C;  /* Charcoal — never pure black */
+--color-text-muted:   #6E6E6E;  /* Grey body copy */
+--color-border:       #E4DFD5;
 
-/* Brand accent — Turkish copper */
---color-accent:       #B87333;  /* Primary accent */
---color-accent-dark:  #8A5524;  /* Hover states */
---color-accent-soft:  #F5E8D8;  /* Subtle backgrounds */
+/* Brand accent — muted antique gold (hairline rules, links) */
+--color-accent:       #B0925E;  /* Primary accent */
+--color-accent-dark:  #8C7043;  /* Hover states */
+--color-accent-soft:  #F1E9DA;  /* Subtle backgrounds / selection */
 
 /* Functional */
 --color-success:      #4A6741;
@@ -31,9 +37,10 @@
 ```
 
 **Usage rules:**
-- 70% off-white + 25% charcoal + 5% copper accent
-- Copper only on: primary CTAs, key links, brand mark, decorative dividers
-- Never use accent as a background block on more than 1 section
+- Mostly white + charcoal type + warm greige bands; gold is a whisper, not a fill
+- Gold only on: hairline dividers, key links/hover, small accents — never a large background block
+- Buttons are charcoal (or outline), not gold
+- Alternate white and greige sections for rhythm, à la Salon Haze
 
 ---
 
@@ -42,19 +49,23 @@
 ### Fonts
 
 ```css
-/* Display — serif, for headlines */
---font-display: "Cormorant Garamond", "Tiempos Headline", Georgia, serif;
-/* Free alternative: Fraunces, Playfair Display */
+/* Display — geometric (Futura-style) sans for headlines.
+   Set UPPERCASE with wide tracking; use the thin (300) weight at large sizes. */
+--font-display: "Jost", "Futura", "Century Gothic", -apple-system, sans-serif;
 
-/* Body — clean geometric sans */
---font-body: "Inter", "Söhne", -apple-system, BlinkMacSystemFont, sans-serif;
-/* Free: Geist, Satoshi */
+/* Body — clean humanist sans */
+--font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 
 /* Accent label — for small uppercase labels */
 --font-label: "Inter", sans-serif;
 ```
 
-Use `next/font` with `display: 'swap'`. Preload only the display font weights actually used.
+Use `next/font` with `display: 'swap'`. Load Jost weights 300/400/500/600.
+
+**Display treatment:** big statement headlines (hero, page heros, brand mark)
+are `text-transform: uppercase`, `font-weight: 300`, letter-spacing
+`--tracking-display-caps` (0.06em). Body-adjacent headings may stay sentence
+case at `--tracking-display` (0.02em).
 
 ### Scale
 
@@ -211,15 +222,15 @@ transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
 **Primary (book now):**
 - Background: `--color-text` (charcoal)
 - Text: `--color-bg`
-- Padding: 18px 32px
+- Padding: 18px 36px
 - Letter-spacing: 0.08em uppercase
-- No border-radius (or 2px max)
+- **Fully rounded (pill): `border-radius: 9999px`** — the Haze button shape
 - Hover: background `--color-accent`
 
 **Secondary:**
 - Background: transparent
 - Border: 1px solid `--color-text`
-- Same padding/typography
+- Same pill radius, padding, and typography
 
 **Text link:**
 - Underline on hover only, with `text-underline-offset: 4px`
@@ -227,9 +238,9 @@ transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
 ### Cards (services)
 
 - Image-led, 4:5 aspect ratio
-- Title in serif over image or below
+- Title in the display sans (uppercase) over image or below
 - Hover: image scales 1.04, label slides up
-- No drop shadows, no border-radius beyond 2px
+- No drop shadows; keep card corners square — pills are for buttons only
 
 ### Forms
 
@@ -245,7 +256,7 @@ transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
 - WCAG 2.1 AA minimum
 - Color contrast 4.5:1 body, 3:1 large text
 - All interactive elements keyboard-accessible
-- Focus rings visible (2px copper outline, 2px offset)
+- Focus rings visible (2px gold accent outline, 2px offset)
 - Skip-to-content link
 - Semantic HTML always (no `<div>` buttons)
 - Motion respects `prefers-reduced-motion`

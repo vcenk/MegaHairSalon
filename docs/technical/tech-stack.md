@@ -17,7 +17,7 @@
 ## Fonts
 
 - **next/font** for font loading
-- Cormorant Garamond (display, weights 300/500)
+- Jost (geometric-sans display, weights 300/400/500/600 — uppercase headlines)
 - Inter (body, weights 400/500/600)
 - Both with `display: 'swap'`
 

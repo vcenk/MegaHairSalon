@@ -20,11 +20,11 @@ export function Logo({ className, size = "md", onClick }: Props) {
       onClick={onClick}
       aria-label="Megas Hair Salon — home"
       className={cn(
-        "inline-block font-display leading-none text-foreground hover:opacity-70 transition-opacity",
+        "inline-block font-display uppercase leading-none text-foreground hover:opacity-70 transition-opacity",
         SIZE_CLASS[size],
         className,
       )}
-      style={{ letterSpacing: "var(--tracking-display)" }}
+      style={{ letterSpacing: "var(--tracking-display-caps)" }}
     >
       Megas
     </Link>

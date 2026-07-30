@@ -38,22 +38,22 @@
   
   <defs>
     <linearGradient id="warmVertical" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FAF8F5"/>
-      <stop offset="55%" stop-color="#F2EEE7"/>
-      <stop offset="100%" stop-color="#E5DFD5"/>
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#ECE7DD"/>
+      <stop offset="100%" stop-color="#E4DFD5"/>
     </linearGradient>
     <linearGradient id="warmDiagonal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F2EEE7"/>
-      <stop offset="100%" stop-color="#E5DFD5"/>
+      <stop offset="0%" stop-color="#ECE7DD"/>
+      <stop offset="100%" stop-color="#E4DFD5"/>
     </linearGradient>
     <radialGradient id="softVignette" cx="50%" cy="50%" r="75%">
       <stop offset="55%" stop-color="rgba(0,0,0,0)"/>
       <stop offset="100%" stop-color="rgba(26,26,26,0.20)"/>
     </radialGradient>
     <linearGradient id="inkToAccent" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="0%" stop-color="#1C1C1C"/>
       <stop offset="70%" stop-color="#3D3A36"/>
-      <stop offset="100%" stop-color="#8A5524"/>
+      <stop offset="100%" stop-color="#8C7043"/>
     </linearGradient>
   </defs>
 

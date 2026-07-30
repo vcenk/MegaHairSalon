@@ -14,7 +14,7 @@ Premium Turkish hair salon website redesign. Full specification in ./docs.
 - Tailwind CSS v4 with custom design tokens from docs/01-design-system.md
 - Framer Motion (animations) + Lenis (smooth scroll)
 - shadcn/ui primitives
-- next/font: Cormorant Garamond (display) + Inter (body)
+- next/font: Jost (geometric-sans display, uppercase) + Inter (body) — see docs/01-design-system.md
 - Hosting: Vercel
 
 ## Strategy (per docs/00-strategy.md)

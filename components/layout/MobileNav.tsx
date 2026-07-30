@@ -79,7 +79,7 @@ export function MobileNav({ open, onClose }: Props) {
         <Link
           href="/book"
           onClick={onClose}
-          className="inline-flex items-center justify-center bg-foreground text-background px-8 py-4 text-xs uppercase hover:bg-accent transition-colors"
+          className="inline-flex items-center justify-center bg-foreground text-background rounded-full px-8 py-4 text-xs uppercase hover:bg-accent transition-colors"
           style={{ letterSpacing: "0.08em" }}
         >
           Book Now

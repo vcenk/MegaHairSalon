@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  /* ─── Colors ─────────────────────────────────────────── */
-  --color-bg: #FAF8F5;
-  --color-bg-alt: #F2EEE7;
-  --color-text: #1A1A1A;
-  --color-text-muted: #6B6661;
-  --color-border: #E5DFD5;
-  --color-accent: #B87333;
-  --color-accent-dark: #8A5524;
-  --color-accent-soft: #F5E8D8;
+  /* ─── Colors ─────────────────────────────────────────────
+     Salon Haze palette: bright white canvas, a warm greige for
+     alternating sections, charcoal (not pure black) type, grey body
+     copy, and a muted antique-gold accent for hairline rules and links.
+     See docs/01-design-system.md. */
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #ECE7DD;
+  --color-text: #1C1C1C;
+  --color-text-muted: #6E6E6E;
+  --color-border: #E4DFD5;
+  --color-accent: #B0925E;
+  --color-accent-dark: #8C7043;
+  --color-accent-soft: #F1E9DA;
   --color-success: #4A6741;
   --color-error: #8B2E2E;
 
@@ -18,9 +22,12 @@
   --color-foreground: var(--color-text);
   --color-muted: var(--color-text-muted);
 
-  /* ─── Typography ─────────────────────────────────────── */
-  --font-display: var(--font-cormorant), "Tiempos Headline", Georgia, serif;
-  --font-body: var(--font-inter), "Söhne", -apple-system, BlinkMacSystemFont, sans-serif;
+  /* ─── Typography ─────────────────────────────────────────
+     Display is a geometric sans (Jost) — thin and wide-tracked, set
+     uppercase for the big statement headlines. Body stays a neutral
+     humanist sans (Inter). No serif. */
+  --font-display: var(--font-jost), "Futura", "Century Gothic", -apple-system, sans-serif;
+  --font-body: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
   --font-sans: var(--font-body);
   --font-serif: var(--font-display);
 
@@ -37,7 +44,8 @@
   --leading-tight: 1.2;
   --leading-body: 1.6;
 
-  --tracking-display: -0.02em;
+  --tracking-display: 0.02em;
+  --tracking-display-caps: 0.06em;
   --tracking-label: 0.18em;
 
   /* ─── Layout ─────────────────────────────────────────── */

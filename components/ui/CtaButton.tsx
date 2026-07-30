@@ -5,7 +5,7 @@ type Variant = "primary" | "secondary";
 type Size = "md" | "lg";
 
 const BASE =
-  "inline-flex items-center justify-center uppercase transition-colors leading-none";
+  "inline-flex items-center justify-center uppercase rounded-full transition-colors leading-none";
 
 const VARIANTS: Record<Variant, string> = {
   primary: "bg-foreground text-background hover:bg-accent",
@@ -14,8 +14,8 @@ const VARIANTS: Record<Variant, string> = {
 };
 
 const SIZES: Record<Size, string> = {
-  md: "px-6 py-3 text-[0.7rem]",
-  lg: "px-8 py-[18px] text-xs",
+  md: "px-7 py-3.5 text-[0.7rem]",
+  lg: "px-9 py-[18px] text-xs",
 };
 
 type Props = {

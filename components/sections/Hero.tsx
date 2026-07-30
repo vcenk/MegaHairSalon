@@ -47,13 +47,13 @@ export function Hero() {
           sizes="100vw"
           className="object-cover"
         />
-        {/* Legibility scrim — warm off-white from the left, fading to transparent */}
+        {/* Legibility scrim — white from the left, fading to transparent */}
         <div
           aria-hidden="true"
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(250,248,245,0.96) 0%, rgba(250,248,245,0.82) 35%, rgba(250,248,245,0.35) 65%, rgba(250,248,245,0.05) 100%)",
+              "linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.82) 35%, rgba(255,255,255,0.35) 65%, rgba(255,255,255,0.05) 100%)",
           }}
         />
         <div
@@ -79,8 +79,8 @@ export function Hero() {
           {/* Brand lockup */}
           <motion.div variants={item} className="flex items-baseline gap-4">
             <span
-              className="font-display text-3xl md:text-[2.25rem] leading-none"
-              style={{ letterSpacing: "var(--tracking-display)" }}
+              className="font-display uppercase text-3xl md:text-[2.25rem] leading-none"
+              style={{ letterSpacing: "var(--tracking-display-caps)" }}
             >
               Megas
             </span>
@@ -105,10 +105,10 @@ export function Hero() {
           </motion.div>
 
           <h1
-            className="mt-8 md:mt-10 font-display text-[clamp(2.75rem,7vw,6rem)]"
+            className="mt-8 md:mt-10 font-display font-light uppercase text-[clamp(2.5rem,6.5vw,5.5rem)]"
             style={{
               lineHeight: "var(--leading-display)",
-              letterSpacing: "var(--tracking-display)",
+              letterSpacing: "var(--tracking-display-caps)",
             }}
           >
             {HEADLINE_WORDS.map((word, i) => (

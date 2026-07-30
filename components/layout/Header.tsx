@@ -70,7 +70,7 @@ export function Header() {
             </ul>
             <Link
               href="/book"
-              className="inline-flex items-center bg-foreground text-background px-5 py-3 text-[0.7rem] uppercase hover:bg-accent transition-colors"
+              className="inline-flex items-center bg-foreground text-background rounded-full px-6 py-3 text-[0.7rem] uppercase hover:bg-accent transition-colors"
               style={{ letterSpacing: "0.08em" }}
             >
               Book Now

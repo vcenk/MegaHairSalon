@@ -28,10 +28,10 @@ export function PageHero({
       <FadeIn className={align === "center" ? "text-center mx-auto max-w-3xl" : "max-w-3xl"}>
         {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
         <h1
-          className="mt-4 font-display text-[clamp(2.5rem,5vw,4rem)]"
+          className="mt-4 font-display font-light uppercase text-[clamp(2.25rem,4.5vw,3.75rem)]"
           style={{
-            lineHeight: "var(--leading-display)",
-            letterSpacing: "var(--tracking-display)",
+            lineHeight: "var(--leading-tight)",
+            letterSpacing: "var(--tracking-display-caps)",
           }}
         >
           {title}

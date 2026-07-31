@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 import { contactPageSchema } from "@/lib/schema";

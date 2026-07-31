@@ -17,6 +17,8 @@ export function Header() {
   const pathname = usePathname();
 
   useEffect(() => {
+    // Close the mobile menu whenever client-side navigation changes the route.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileOpen(false);
   }, [pathname]);
 

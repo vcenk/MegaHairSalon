@@ -9,7 +9,7 @@ import { TEAM } from "@/lib/team";
 export const metadata = pageMetadata({
   title: "Our Team | Master Colourists & Stylists in Coquitlam",
   description:
-    "Meet the master colourists and stylists at Megas Hair Salon in Coquitlam — Bülent, Gazi, Emir, and director Fulya. Decades of Turkish hair artistry.",
+    "Meet the master colourists and stylists at Megas Hair Salon in Coquitlam — led by founder Bülent (Bill) and director Fulya. Decades of Turkish hair artistry.",
   path: "/team",
 });
 
@@ -23,7 +23,7 @@ export default function TeamHubPage() {
         ]}
         eyebrow="The Artisans"
         title="Hands that have shaped decades of hair."
-        subhead="Four stylists. One hundred and twenty-plus years of combined craft."
+        subhead="Our stylists — four decades of Turkish craft, from Istanbul to Coquitlam."
       />
 
       <section

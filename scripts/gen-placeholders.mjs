@@ -330,6 +330,10 @@ const team = [
   ["gazi", "G", "Gazi", "41 YEARS · MASTER STYLIST"],
   ["emir", "E", "Emir", "23 YEARS · COLOUR & STYLING"],
   ["fulya", "F", "Fulya", "15 YEARS · DIRECTOR"],
+  ["fara", "F", "Fara", "STYLIST"],
+  ["nadia", "N", "Nadia", "STYLIST"],
+  ["rain", "R", "Rain", "STYLIST"],
+  ["angela", "A", "Angela", "STYLIST"],
 ];
 for (const [slug, initial, name, years] of team) {
   write(`stylist-${slug}-portrait`, portrait(slug, initial, name, years));

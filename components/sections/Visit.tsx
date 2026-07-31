@@ -23,6 +23,12 @@ export function Visit() {
       className="mx-auto px-6 md:px-10 py-16 md:py-24 lg:py-32"
       style={{ maxWidth: "var(--container-max)" }}
     >
+      {/* Antique-gold hairline, in the Salon Haze "Get In Touch" idiom */}
+      <div
+        aria-hidden="true"
+        className="h-px w-full mb-12 md:mb-16"
+        style={{ backgroundColor: "var(--color-accent)", opacity: 0.5 }}
+      />
       <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <FadeIn>
           <Eyebrow>Visit</Eyebrow>
@@ -87,6 +93,11 @@ export function Visit() {
           </div>
         </FadeIn>
       </div>
+      <div
+        aria-hidden="true"
+        className="h-px w-full mt-12 md:mt-16"
+        style={{ backgroundColor: "var(--color-accent)", opacity: 0.5 }}
+      />
     </section>
   );
 }

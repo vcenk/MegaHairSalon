@@ -8,6 +8,7 @@ import { ReviewsMarquee } from "@/components/sections/ReviewsMarquee";
 import { Artisans } from "@/components/sections/Artisans";
 import { FeaturedWork } from "@/components/sections/FeaturedWork";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { InstagramStrip } from "@/components/sections/InstagramStrip";
 import { Visit } from "@/components/sections/Visit";
 
 export const metadata = pageMetadata({
@@ -29,6 +30,7 @@ export default function Home() {
       <Artisans />
       <FeaturedWork />
       <Testimonials />
+      <InstagramStrip />
       <Visit />
     </>
   );

@@ -264,6 +264,41 @@ export const TEAM: readonly TeamMember[] = [
       "blow-dry-coquitlam",
     ],
   },
+
+  // ── New stylists (2025 roster) ─────────────────────────────────────────
+  // PLACEHOLDER PROFILES. Names are confirmed; the client is supplying real
+  // titles, bios, years, and portraits. Until then these carry neutral copy
+  // (no invented specifics), years: null, and generated placeholder portraits.
+  // Replace per person as content arrives — see docs/LAUNCH-BLOCKERS.md.
+  ...(["Fara", "Nadia", "Rain", "Angela"] as const).map((name) => {
+    const slug = name.toLowerCase();
+    return {
+      slug,
+      name,
+      title: "Stylist",
+      years: null,
+      portrait: `/images/placeholder/stylist-${slug}-portrait.svg`,
+      portraitAlt: `Portrait of ${name}, stylist at Megas Hair Salon, Coquitlam`,
+      metaTitle: `${name} — Stylist | Megas Hair Salon Coquitlam`,
+      metaDescription: `Meet ${name}, a stylist at Megas Hair Salon in Coquitlam. Book cuts, colour, and styling at (778) 858-0396.`,
+      eyebrow: "Megas Stylist",
+      h1: `${name}.`,
+      bio: `${name} is part of the stylist team at Megas Hair Salon in Coquitlam. A fuller profile — training, specialties, and featured work — is on its way. In the meantime, you can book an appointment online.`,
+      specialties: ["Cutting", "Colour", "Blow-dry & styling"],
+      knowsAbout: ["Cutting", "Colour", "Styling"],
+      gallery: [],
+      pullQuote: {
+        quote:
+          "From Istanbul to Coquitlam — the same standard of care in every chair.",
+        author: "Megas Hair Salon",
+      },
+      relatedServices: [
+        "precision-haircut-coquitlam",
+        "hair-color-coquitlam",
+        "blow-dry-coquitlam",
+      ],
+    };
+  }),
 ] as const;
 
 export function getTeamMember(slug: string): TeamMember | undefined {

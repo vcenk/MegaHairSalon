@@ -6,7 +6,8 @@ Items that must be resolved before production deployment.
 - [ ] Real contact email (currently placeholder: hello@megashairsalon.ca)
 - [ ] Postal code: confirm V3B 0J1 (Birdeye/Yelp) vs V3B 0H9 (old site). Fix everywhere.
 - [x] Booking platform confirmed: **Phorest** (https://phorest.com/book/salons/megashairsalon). Wired as an external CTA on /book (was a Fresha placeholder). Services + pricing live on Phorest.
-- [ ] Short bios + titles for the 4 new stylists — Fara, Nadia, Rain, Angela (team grew 4 → 8; see docs/redesign-plan.md)
+- [ ] Real profiles for the 4 new stylists — Fara, Nadia, Rain, Angela. Scaffolded in lib/team.ts with neutral PLACEHOLDER copy (title "Stylist", years null, generated portraits, no invented facts). Replace with real titles, bios, years, specialties, and portraits as the client supplies them.
+- [ ] Academy: does Megas run a training academy (like Zazou)? If yes, add an Academy page + footer link. Left out for now — not adding a service that may not exist.
 - [ ] **Design assets from Salon Haze** (client wants Haze's look/palette): screenshots or hex colours + font names. The build sandbox's egress policy blocks salonhaze.com, so these must be supplied — see docs/redesign-plan.md, Phase 0.
 - [ ] Geo coordinates verified against actual storefront (currently 49.2814, -122.7905)
 - [ ] Instagram and Facebook URLs confirmed for sameAs schema + footer

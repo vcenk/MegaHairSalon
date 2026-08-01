@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import { PRIMARY_NAV } from "@/lib/nav";
+import { BOOKING } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Logo } from "./Logo";
 import { MobileNav } from "./MobileNav";
@@ -70,13 +71,15 @@ export function Header() {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/book"
+            <a
+              href={BOOKING.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center bg-foreground text-background rounded-full px-6 py-3 text-[0.7rem] uppercase hover:bg-accent transition-colors"
               style={{ letterSpacing: "0.08em" }}
             >
               Book Now
-            </Link>
+            </a>
           </nav>
 
           <button

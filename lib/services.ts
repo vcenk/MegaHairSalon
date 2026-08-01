@@ -34,7 +34,7 @@ export const SERVICES: readonly Service[] = [
     slug: "balayage-coquitlam",
     name: "Balayage",
     teaser: "Hand-painted dimension",
-    priceFrom: 250,
+    priceFrom: 350,
     priceMax: 450,
     image: "/images/photos/result-balayage-1.jpg",
     imageAlt:
@@ -69,10 +69,11 @@ export const SERVICES: readonly Service[] = [
     whoItsFor:
       "Anyone wanting low-maintenance dimension, growing out previous colour, transitioning to a lighter shade, or adding warmth and movement to brunette. If you hate the look of harsh regrowth lines, balayage is built for you.",
     pricing: [
-      { label: "Partial balayage", from: "$250" },
-      { label: "Full balayage", from: "$320" },
-      { label: "Full balayage + tone + cut", from: "$380" },
-      { label: "Colour correction balayage", from: "$450+" },
+      { label: "Balayage (includes toner)", from: "$350" },
+      { label: "Balayage + blow-dry", from: "$400" },
+      { label: "Half-head babylights", from: "$200" },
+      { label: "Full-head babylights", from: "$320" },
+      { label: "Colour correction", from: "Consultation" },
     ],
     pricingNote:
       "Final pricing depends on hair length, density, and the work involved. We confirm pricing at consultation — no surprises at checkout.",
@@ -102,11 +103,11 @@ export const SERVICES: readonly Service[] = [
       },
       {
         q: "How much does balayage cost in Coquitlam?",
-        a: "At Megas, balayage starts at $250 for a partial and $320 for a full application. Final pricing depends on length, density, and the level of work involved. The full price is confirmed at consultation.",
+        a: "At Megas, balayage starts at $350 and includes a toner. A balayage with a blow-dry is from $400. Babylights (a softer, finer technique) start at $200 for a half-head. Final pricing depends on length, density, and the level of work involved, and is confirmed at consultation.",
       },
       {
         q: "How often should I get my balayage refreshed?",
-        a: "Most clients return every 10–14 weeks. Because balayage grows out softly, it's far lower maintenance than traditional foils. Between appointments, a tone refresh ($120) keeps colour looking fresh.",
+        a: "Most clients return every 10–14 weeks. Because balayage grows out softly, it's far lower maintenance than traditional foils. Between appointments, a toner or gloss refresh (from $85) keeps colour looking fresh.",
       },
       {
         q: "Will balayage damage my hair?",
@@ -132,8 +133,8 @@ export const SERVICES: readonly Service[] = [
     slug: "blonde-specialist-coquitlam",
     name: "Blonde Specialist",
     teaser: "Transformative light, fearlessly toned",
-    priceFrom: 280,
-    priceMax: 600,
+    priceFrom: 145,
+    priceMax: 400,
     image: "/images/photos/result-blonde-1.jpg",
     imageAlt:
       "Platinum blonde transformation with healthy lift and cool tone, by Bülent at Megas Hair Salon, Coquitlam",
@@ -174,11 +175,13 @@ export const SERVICES: readonly Service[] = [
       "Lived-in blondes with grown-out roots",
     ],
     pricing: [
-      { label: "Partial highlights", from: "$280" },
-      { label: "Full highlights", from: "$360" },
-      { label: "Platinum / level 10 lift", from: "$450" },
-      { label: "Colour correction (consultation required)", from: "$500+" },
-      { label: "Tone refresh between appointments", from: "$120" },
+      { label: "Half-head highlights (includes toner)", from: "$145" },
+      { label: "Full-head highlights (includes toner)", from: "$185" },
+      { label: "Half-head babylights (includes toner)", from: "$200" },
+      { label: "Full-head babylights (includes toner)", from: "$320" },
+      { label: "Bleach & tone (roots or partial)", from: "$150" },
+      { label: "Toner / gloss refresh", from: "$85" },
+      { label: "Colour correction", from: "Consultation" },
     ],
     pricingNote:
       "Final pricing depends on hair length, density, and the work involved. We confirm pricing at consultation — no surprises at checkout.",
@@ -220,7 +223,7 @@ export const SERVICES: readonly Service[] = [
       },
       {
         q: "What's the price range for going blonde at Megas?",
-        a: "Most blonde services fall between $280 and $450. Colour correction work — for previous bad colour, deep box dye, or significant transformations — starts at $500. We confirm pricing at consultation.",
+        a: "Most blonde services fall between $145 and $370, depending on how much of the head is lightened — half-head or full-head highlights, or babylights — and always including a toner. Colour correction work, for previous bad colour or deep box dye, is quoted at a consultation. We confirm pricing before we start.",
       },
     ],
     related: [
@@ -234,7 +237,7 @@ export const SERVICES: readonly Service[] = [
     slug: "precision-haircut-coquitlam",
     name: "Precision Cut",
     teaser: "Sculpted for your bone structure",
-    priceFrom: 85,
+    priceFrom: 60,
     image: "/images/photos/result-precision-cut-1.jpg",
     imageAlt:
       "Precision haircut with clean lines and soft movement, by master stylists at Megas Hair Salon, Coquitlam",
@@ -248,11 +251,11 @@ export const SERVICES: readonly Service[] = [
     approach:
       "A great cut isn't about the latest scissor technique — it's about understanding the hair in front of us. How it grows, how it falls, what it does on the third day after a wash. Our master stylists have spent decades developing the eye for that. The result is a cut that looks intentional from every angle, and grows out gracefully instead of awkwardly.",
     pricing: [
-      { label: "Women's cut & style", from: "$85" },
+      { label: "Women's cut, short hair", from: "$60" },
+      { label: "Women's cut, long or thick hair", from: "$75" },
       { label: "Men's cut", from: "$55" },
-      { label: "Children's cut (under 12)", from: "$45" },
-      { label: "Wash, cut, & blow dry", from: "$110" },
-      { label: "Senior stylist cut", from: "$95" },
+      { label: "Kids' cut (3–11 yrs)", from: "$40" },
+      { label: "Bang trim", from: "$20" },
     ],
     pricingNote:
       "Final pricing depends on hair length, density, and the work involved. We always confirm at consultation — no surprises at checkout.",
@@ -274,7 +277,7 @@ export const SERVICES: readonly Service[] = [
     faqs: [
       {
         q: "How much does a haircut cost at Megas Coquitlam?",
-        a: "Women's cuts start at $85, men's at $55, children at $45. A wash, cut, and blow dry is $110. Final pricing depends on length and complexity — confirmed before we start.",
+        a: "Women's cuts start at $60 for short hair and $75 for long or thick hair, men's cuts at $55, and kids' cuts (3–11) from $40. A bang trim is $20. Final pricing depends on length and complexity — confirmed before we start.",
       },
       {
         q: "Do I need to book in advance?",
@@ -304,7 +307,7 @@ export const SERVICES: readonly Service[] = [
     slug: "hair-color-coquitlam",
     name: "Hair Colour",
     teaser: "Rich, custom-composed colour",
-    priceFrom: 180,
+    priceFrom: 120,
     image: "/images/photos/result-hair-color-1.jpg",
     imageAlt:
       "Rich brunette hair colour with custom tone, by master colourists at Megas Hair Salon, Coquitlam",
@@ -318,11 +321,12 @@ export const SERVICES: readonly Service[] = [
     approach:
       "Off-the-shelf colour gives off-the-shelf results. We mix every formula at the bowl, for the exact tone, depth, and undertone your hair needs. Our colourists have worked with L'Oréal, Wella, and Kérastase for decades — and that fluency shows in the finish: rich, true, and built to hold.",
     pricing: [
-      { label: "Single-process colour (root or all-over)", from: "$180" },
-      { label: "Glossing / tone refresh", from: "$120" },
-      { label: "Colour correction", from: "$350+" },
-      { label: "Vivid / fashion colour", from: "$250+" },
-      { label: "Grey coverage", from: "$180" },
+      { label: "Full colour, short hair", from: "$120" },
+      { label: "Full colour, long hair", from: "$150" },
+      { label: "Full colour + blow-dry", from: "$170" },
+      { label: "Men's colour", from: "$90" },
+      { label: "Toner / gloss", from: "$85" },
+      { label: "Colour correction", from: "Consultation" },
     ],
     pricingNote:
       "Final pricing depends on hair length, density, and the work involved. We always confirm at consultation — no surprises at checkout.",
@@ -344,7 +348,7 @@ export const SERVICES: readonly Service[] = [
     faqs: [
       {
         q: "How much does hair colour cost in Coquitlam?",
-        a: "Single-process colour starts at $180. Glossing is $120. Colour correction starts at $350 and depends on the work involved. We always confirm pricing at consultation.",
+        a: "Full colour starts at $120 for short hair and $150 for long hair; add a blow-dry from $170. A toner or gloss is from $85, and men's colour is from $90. Colour correction is quoted at a consultation. We always confirm pricing before we start.",
       },
       {
         q: "How long does a colour appointment take?",
@@ -356,7 +360,7 @@ export const SERVICES: readonly Service[] = [
       },
       {
         q: "Can you cover grey hair?",
-        a: "Yes. Grey coverage starts at $180 and is one of our most-requested services. We use formulas designed for full opacity on resistant grey, with tone customised to flatter your skin and lifestyle.",
+        a: "Yes. Grey coverage is handled within our full-colour service, from $120, and is one of our most-requested services. We use formulas designed for full opacity on resistant grey, with tone customised to flatter your skin and lifestyle.",
       },
       {
         q: "What's colour correction and do I need it?",
@@ -375,7 +379,7 @@ export const SERVICES: readonly Service[] = [
     name: "Keratin Smoothing",
     teaser: "Frizz-free for months",
     priceFrom: 300,
-    priceMax: 400,
+    priceMax: 450,
     image: "/images/photos/result-keratin-1.jpg",
     imageAlt:
       "Keratin-smoothed hair with glossy finish and reduced frizz, Megas Hair Salon, Coquitlam",
@@ -390,10 +394,10 @@ export const SERVICES: readonly Service[] = [
     approach:
       "A keratin treatment can transform daily styling — but only if it's done well, with the right formula for your hair type. We use professional-grade keratin systems with no compromise on hair health, and we customise the application based on your texture, porosity, and the result you want. Some clients want pin-straight; most want manageable. We do both.",
     pricing: [
-      { label: "Keratin smoothing treatment", from: "$300" },
-      { label: "Premium keratin (longer-lasting formula)", from: "$400" },
-      { label: "Hair botox treatment", from: "$300" },
-      { label: "Targeted smoothing (frizz zones only)", from: "$220" },
+      { label: "Keratin smoothing, short hair", from: "$300" },
+      { label: "Keratin smoothing, long hair", from: "$450" },
+      { label: "Hair Botox treatment", from: "$250" },
+      { label: "Treatment add-on", from: "$30" },
     ],
     pricingNote:
       "Final pricing depends on hair length, density, and the work involved. We always confirm at consultation — no surprises at checkout.",
@@ -445,7 +449,7 @@ export const SERVICES: readonly Service[] = [
     slug: "blow-dry-coquitlam",
     name: "Blow Dry",
     teaser: "Polished, lasting styling",
-    priceFrom: 65,
+    priceFrom: 50,
     image: "/images/photos/result-blow-dry-1.jpg",
     imageAlt:
       "Polished blow-dry styling with lasting hold, by Emir at Megas Hair Salon, Coquitlam",
@@ -460,11 +464,12 @@ export const SERVICES: readonly Service[] = [
     approach:
       "There's a difference between a quick dry and a real blowout. Tension at the root, the right brush for your texture, the patience to direct each section — that's what gives hair the shape and bounce that lasts past lunchtime. Emir, in particular, is celebrated for this work: clients say his blowouts hold longer than anyone else's they've tried.",
     pricing: [
-      { label: "Standard blow dry", from: "$65" },
-      { label: "Wash, blow dry & style", from: "$80" },
-      { label: "Special occasion styling", from: "$120" },
-      { label: "Updo / formal style", from: "$150" },
-      { label: "Bridal trial", from: "$180" },
+      { label: "Short hair blowout", from: "$50" },
+      { label: "Long hair blowout", from: "$65" },
+      { label: "Blowout with extensions", from: "$75" },
+      { label: "Braid", from: "$80" },
+      { label: "Evening style", from: "$90" },
+      { label: "Updo", from: "$110" },
     ],
     pricingNote:
       "Final pricing depends on hair length, density, and the work involved. We always confirm at consultation — no surprises at checkout.",
@@ -516,7 +521,7 @@ export const SERVICES: readonly Service[] = [
     slug: "root-touch-up-coquitlam",
     name: "Root Touch Up",
     teaser: "Seamless colour refresh",
-    priceFrom: 120,
+    priceFrom: 95,
     image: "/images/photos/result-root-touch-up-1.jpg",
     imageAlt:
       "Seamlessly blended root touch-up with custom-mixed colour, Megas Hair Salon, Coquitlam",
@@ -531,10 +536,10 @@ export const SERVICES: readonly Service[] = [
     approach:
       "A root touch-up is one of the most-requested services in any salon — and one of the easiest to get wrong. Lines of demarcation, mismatched tone, over-processing the hair you've grown out. We do them properly: a custom-mixed formula that matches your existing colour exactly, applied with care to protect everything below the regrowth.",
     pricing: [
-      { label: "Root touch-up (single process)", from: "$120" },
-      { label: "Root touch-up + glossing", from: "$165" },
-      { label: "Root touch-up + cut & style", from: "$200" },
-      { label: "Grey coverage root", from: "$130" },
+      { label: "Root retouch", from: "$95" },
+      { label: "Root retouch + blow-dry", from: "$145" },
+      { label: "Base break", from: "$85" },
+      { label: "Toner add-on", from: "$50" },
     ],
     pricingNote:
       "Final pricing depends on hair length, density, and the work involved. We always confirm at consultation — no surprises at checkout.",
@@ -560,7 +565,7 @@ export const SERVICES: readonly Service[] = [
       },
       {
         q: "How much does a root touch-up cost in Coquitlam?",
-        a: "A root touch-up at Megas starts at $120. Adding a glossing treatment to refresh your overall colour is $165. With cut and style, the appointment is $200.",
+        a: "A root retouch at Megas starts at $95. With a blow-dry it's from $145. You can add a toner to refresh your overall tone for $50.",
       },
       {
         q: "How long does a root touch-up take?",
@@ -586,7 +591,7 @@ export const SERVICES: readonly Service[] = [
     slug: "restorative-treatment-coquitlam",
     name: "Restorative Treatment",
     teaser: "Deep conditioning for damaged hair",
-    priceFrom: 90,
+    priceFrom: 40,
     image: "/images/photos/result-restorative-1.jpg",
     imageAlt:
       "Restored, glossy hair after bond-rebuilding treatment at Megas Hair Salon, Coquitlam",
@@ -601,11 +606,11 @@ export const SERVICES: readonly Service[] = [
     approach:
       "Healthy hair is the foundation of every great cut and colour. When hair is damaged — from over-processing, heat, or just years of styling — no service will look its best until that's addressed. Our restorative treatments use professional bond rebuilders and deep conditioning systems to bring hair back: stronger, smoother, and ready for whatever you want to do with it next.",
     pricing: [
-      { label: "Deep conditioning treatment", from: "$90" },
-      { label: "Bond rebuilding treatment", from: "$140" },
-      { label: "Scalp detox & treatment", from: "$110" },
-      { label: "Repair + scalp combo", from: "$180" },
-      { label: "Add to any service", from: "$50" },
+      { label: "Deep conditioning mask", from: "$40" },
+      { label: "Aveda botanical treatment", from: "$45" },
+      { label: "Aveda scalp treatment", from: "$40" },
+      { label: "Hair Botox", from: "$250" },
+      { label: "Add to any service", from: "$30" },
     ],
     pricingNote:
       "Final pricing depends on hair length, density, and the work involved. We always confirm at consultation — no surprises at checkout.",
@@ -643,7 +648,7 @@ export const SERVICES: readonly Service[] = [
       },
       {
         q: "Can I add a treatment to another appointment?",
-        a: "Yes. Adding a treatment to a colour, cut, or blowout is one of the most efficient ways to maintain hair health. Add-on treatments start at $50.",
+        a: "Yes. Adding a treatment to a colour, cut, or blowout is one of the most efficient ways to maintain hair health. Add-on treatments start at $30.",
       },
     ],
     related: [

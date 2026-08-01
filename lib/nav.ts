@@ -2,6 +2,7 @@ export type NavItem = { readonly label: string; readonly href: string };
 
 export const PRIMARY_NAV: readonly NavItem[] = [
   { label: "Services", href: "/services" },
+  { label: "Prices", href: "/menu" },
   { label: "Team", href: "/team" },
   { label: "Gallery", href: "/gallery" },
   { label: "About", href: "/about" },

@@ -11,6 +11,7 @@ import { CtaButton } from "@/components/ui/CtaButton";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { SERVICES, getService } from "@/lib/services";
 import { TEAM } from "@/lib/team";
+import { BOOKING } from "@/lib/constants";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -90,7 +91,7 @@ export default async function ServicePage({ params }: Params) {
             From ${service.priceFrom}
             {service.priceMax ? ` – $${service.priceMax}` : ""}
           </span>
-          <CtaButton href="/book">Book this service</CtaButton>
+          <CtaButton href={BOOKING.url} external>Book this service</CtaButton>
         </FadeIn>
       </section>
 
@@ -410,7 +411,7 @@ export default async function ServicePage({ params }: Params) {
             {service.finalCta}
           </h2>
           <div className="mt-8 flex justify-center">
-            <CtaButton href="/book">Book your appointment</CtaButton>
+            <CtaButton href={BOOKING.url} external>Book your appointment</CtaButton>
           </div>
         </FadeIn>
       </section>

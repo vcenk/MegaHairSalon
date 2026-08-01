@@ -27,7 +27,7 @@ export const CONTACT = {
   },
   phone: "(778) 858-0396",
   phoneHref: "+17788580396",
-  email: "hello@megashairsalon.ca",
+  email: "megashairsalon@gmail.com",
   geo: { latitude: 49.2814, longitude: -122.7905 },
 } as const;
 
@@ -48,7 +48,9 @@ export const HOURS: Record<
 
 export const BOOKING = {
   // Phorest hosted online-booking page. Services and pricing live here.
-  url: "https://phorest.com/book/salons/megashairsalon",
+  // Use the salon's direct booking subdomain — phorest.com/book/salons/...
+  // redirects to the Phorest marketing site rather than the booking flow.
+  url: "https://megashairsalon.phorest.me",
   provider: "Phorest",
 } as const;
 

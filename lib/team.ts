@@ -210,19 +210,19 @@ export const TEAM: readonly TeamMember[] = [
   {
     slug: "fulya",
     name: "Fulya",
-    title: "Director & Client Experience Lead",
+    title: "Owner & Director",
     years: 15,
     portrait: "/images/placeholder/stylist-fulya-portrait.svg",
     portraitAlt:
-      "Portrait of Fulya, director and client experience lead at Megas Hair Salon, Coquitlam",
+      "Portrait of Fulya, owner and director at Megas Hair Salon, Coquitlam",
     actionImage: "/images/placeholder/stylist-fulya-action.svg",
     actionImageAlt:
       "Fulya at the front of the salon, welcoming a client at Megas Coquitlam",
     metaTitle:
-      "Fulya — Director & Client Experience Lead | Megas Hair Salon Coquitlam",
+      "Fulya — Owner & Director | Megas Hair Salon Coquitlam",
     metaDescription:
-      "Meet Fulya, Director & Client Experience Lead at Megas Hair Salon Coquitlam. 15+ years in client experience and salon operations. Book at (778) 858-0396.",
-    eyebrow: "15 years · Director",
+      "Meet Fulya, owner and director of Megas Hair Salon Coquitlam. 15+ years in client experience and salon operations. Book at (778) 858-0396.",
+    eyebrow: "Owner & Director",
     h1: "Fulya — the architect of the experience.",
     bio: "A strong vision, refined leadership, and an unwavering commitment to excellence — Fulya is the driving force behind the experience at our salon. With business education across Turkey, the United States, and Canada, she brings a globally informed and multifaceted perspective to the beauty industry. As the salon's director and client relations lead, Fulya is known for her graceful yet solution-focused approach. She oversees every aspect of the client journey — from appointments and team coordination to service quality and long-term satisfaction. To her, beauty is not just appearance; it's trust, connection, and consistency. The Vancouver chapter of our story was shaped under her leadership.",
     specialties: [
@@ -275,15 +275,15 @@ export const TEAM: readonly TeamMember[] = [
     return {
       slug,
       name,
-      title: "Stylist",
+      title: "Senior Stylist",
       years: null,
       portrait: `/images/placeholder/stylist-${slug}-portrait.svg`,
-      portraitAlt: `Portrait of ${name}, stylist at Megas Hair Salon, Coquitlam`,
-      metaTitle: `${name} — Stylist | Megas Hair Salon Coquitlam`,
-      metaDescription: `Meet ${name}, a stylist at Megas Hair Salon in Coquitlam. Book cuts, colour, and styling at (778) 858-0396.`,
-      eyebrow: "Megas Stylist",
+      portraitAlt: `Portrait of ${name}, senior stylist at Megas Hair Salon, Coquitlam`,
+      metaTitle: `${name} — Senior Stylist | Megas Hair Salon Coquitlam`,
+      metaDescription: `Meet ${name}, senior stylist at Megas Hair Salon in Coquitlam. Book cuts, colour, and styling at (778) 858-0396.`,
+      eyebrow: "Senior Stylist",
       h1: `${name}.`,
-      bio: `${name} is part of the stylist team at Megas Hair Salon in Coquitlam. A fuller profile — training, specialties, and featured work — is on its way. In the meantime, you can book an appointment online.`,
+      bio: `${name} is part of the senior styling team at Megas Hair Salon in Coquitlam. A fuller profile — training, specialties, and featured work — is on its way. In the meantime, you can book an appointment online.`,
       specialties: ["Cutting", "Colour", "Blow-dry & styling"],
       knowsAbout: ["Cutting", "Colour", "Styling"],
       gallery: [],

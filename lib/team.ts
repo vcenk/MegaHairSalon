@@ -210,7 +210,7 @@ export const TEAM: readonly TeamMember[] = [
   {
     slug: "fulya",
     name: "Fulya",
-    title: "Director & Client Experience Lead",
+    title: "Owner & Director",
     years: 15,
     portrait: "/images/placeholder/stylist-fulya-portrait.svg",
     portraitAlt:
@@ -219,10 +219,10 @@ export const TEAM: readonly TeamMember[] = [
     actionImageAlt:
       "Fulya at the front of the salon, welcoming a client at Megas Coquitlam",
     metaTitle:
-      "Fulya — Director & Client Experience Lead | Megas Hair Salon Coquitlam",
+      "Fulya — Owner & Director | Megas Hair Salon Coquitlam",
     metaDescription:
-      "Meet Fulya, Director & Client Experience Lead at Megas Hair Salon Coquitlam. 15+ years in client experience and salon operations. Book at (778) 858-0396.",
-    eyebrow: "15 years · Director",
+      "Meet Fulya, owner and director of Megas Hair Salon Coquitlam. 15+ years in client experience and salon operations. Book at (778) 858-0396.",
+    eyebrow: "Owner & Director",
     h1: "Fulya — the architect of the experience.",
     bio: "A strong vision, refined leadership, and an unwavering commitment to excellence — Fulya is the driving force behind the experience at our salon. With business education across Turkey, the United States, and Canada, she brings a globally informed and multifaceted perspective to the beauty industry. As the salon's director and client relations lead, Fulya is known for her graceful yet solution-focused approach. She oversees every aspect of the client journey — from appointments and team coordination to service quality and long-term satisfaction. To her, beauty is not just appearance; it's trust, connection, and consistency. The Vancouver chapter of our story was shaped under her leadership.",
     specialties: [
@@ -263,6 +263,102 @@ export const TEAM: readonly TeamMember[] = [
       "precision-haircut-coquitlam",
       "blow-dry-coquitlam",
     ],
+  },
+  {
+    slug: "fara",
+    name: "Fara",
+    title: "Senior Stylist",
+    years: null,
+    portrait: "/images/placeholder/stylist-fara-portrait.svg",
+    portraitAlt:
+      "Portrait of Fara, senior stylist at Megas Hair Salon, Coquitlam",
+    actionImage: "/images/placeholder/stylist-fara-action.svg",
+    actionImageAlt: "Fara at work at Megas Hair Salon, Coquitlam",
+    metaTitle: "Fara — Senior Stylist | Megas Hair Salon Coquitlam",
+    metaDescription:
+      "Meet Fara, senior stylist at Megas Hair Salon in Coquitlam — precision cuts, colour, and styling. Book online or call (778) 858-0396.",
+    eyebrow: "Senior Stylist",
+    h1: "Fara.",
+    bio: "Fara is one of the senior stylists shaping the day-to-day on our Coquitlam floor — equally at home with a sharp cut, a colour refresh, or a blow-dry with staying power. A fuller profile and portfolio are on the way.",
+    specialties: ["Precision cuts", "Colour", "Blow-dry & styling"],
+    gallery: [],
+    pullQuote: {
+      quote: "The right cut should look effortless the moment you leave the chair.",
+      author: "Megas Hair Salon",
+    },
+    relatedServices: [],
+  },
+  {
+    slug: "nadia",
+    name: "Nadia",
+    title: "Senior Stylist",
+    years: null,
+    portrait: "/images/placeholder/stylist-nadia-portrait.svg",
+    portraitAlt:
+      "Portrait of Nadia, senior stylist at Megas Hair Salon, Coquitlam",
+    actionImage: "/images/placeholder/stylist-nadia-action.svg",
+    actionImageAlt: "Nadia at work at Megas Hair Salon, Coquitlam",
+    metaTitle: "Nadia — Senior Stylist | Megas Hair Salon Coquitlam",
+    metaDescription:
+      "Meet Nadia, senior stylist at Megas Hair Salon in Coquitlam — cuts, colour, and finishing. Book online or call (778) 858-0396.",
+    eyebrow: "Senior Stylist",
+    h1: "Nadia.",
+    bio: "Nadia brings a senior stylist's precision to cut, colour, and finish. Warm and detail-driven, she's known for making every guest feel looked after from consultation to blow-dry. More about Nadia is coming soon.",
+    specialties: ["Cuts", "Colour", "Blow-dry & styling"],
+    gallery: [],
+    pullQuote: {
+      quote: "Great hair starts with actually listening.",
+      author: "Megas Hair Salon",
+    },
+    relatedServices: [],
+  },
+  {
+    slug: "rain",
+    name: "Rain",
+    title: "Senior Stylist",
+    years: null,
+    portrait: "/images/placeholder/stylist-rain-portrait.svg",
+    portraitAlt:
+      "Portrait of Rain, senior stylist at Megas Hair Salon, Coquitlam",
+    actionImage: "/images/placeholder/stylist-rain-action.svg",
+    actionImageAlt: "Rain at work at Megas Hair Salon, Coquitlam",
+    metaTitle: "Rain — Senior Stylist | Megas Hair Salon Coquitlam",
+    metaDescription:
+      "Meet Rain, senior stylist at Megas Hair Salon in Coquitlam — modern cutting and styling. Book online or call (778) 858-0396.",
+    eyebrow: "Senior Stylist",
+    h1: "Rain.",
+    bio: "Rain is a senior stylist with a modern, considered approach to cutting and styling — clean lines, wearable shapes, and finishes built to last. A fuller profile and portfolio are on their way.",
+    specialties: ["Precision cuts", "Styling", "Colour"],
+    gallery: [],
+    pullQuote: {
+      quote: "Detail is the difference.",
+      author: "Megas Hair Salon",
+    },
+    relatedServices: [],
+  },
+  {
+    slug: "angela",
+    name: "Angela",
+    title: "Senior Stylist",
+    years: null,
+    portrait: "/images/placeholder/stylist-angela-portrait.svg",
+    portraitAlt:
+      "Portrait of Angela, senior stylist at Megas Hair Salon, Coquitlam",
+    actionImage: "/images/placeholder/stylist-angela-action.svg",
+    actionImageAlt: "Angela at work at Megas Hair Salon, Coquitlam",
+    metaTitle: "Angela — Senior Stylist | Megas Hair Salon Coquitlam",
+    metaDescription:
+      "Meet Angela, senior stylist at Megas Hair Salon in Coquitlam — cuts, colour, and styling. Book online or call (778) 858-0396.",
+    eyebrow: "Senior Stylist",
+    h1: "Angela.",
+    bio: "Angela rounds out our senior styling team, working across cuts, colour, and styling with a calm, exacting eye. More about Angela — and her portfolio — is coming soon.",
+    specialties: ["Cuts", "Colour", "Blow-dry & styling"],
+    gallery: [],
+    pullQuote: {
+      quote: "We want every guest to leave feeling seen.",
+      author: "Megas Hair Salon",
+    },
+    relatedServices: [],
   },
 ] as const;
 

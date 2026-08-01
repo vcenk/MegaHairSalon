@@ -27,7 +27,7 @@ export const CONTACT = {
   },
   phone: "(778) 858-0396",
   phoneHref: "+17788580396",
-  email: "hello@megashairsalon.ca",
+  email: "megashairsalon@gmail.com",
   geo: { latitude: 49.2814, longitude: -122.7905 },
 } as const;
 
@@ -50,6 +50,12 @@ export const SOCIAL = {
   instagram: "https://www.instagram.com/megashairsalon",
   facebook: "https://www.facebook.com/megashairsalon",
   google: "https://www.google.com/maps/place/MEGAS+Hair+Salon",
+} as const;
+
+// Online booking is handled by Phorest. Every "Book" CTA links out to this URL.
+export const BOOKING = {
+  provider: "Phorest",
+  url: "https://megashairsalon.phorest.me",
 } as const;
 
 export const RATINGS = {

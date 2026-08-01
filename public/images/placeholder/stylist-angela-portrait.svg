@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Fulya — Megas Hair Salon, Coquitlam">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Angela — Megas Hair Salon, Coquitlam">
   
   <defs>
     <linearGradient id="warmVertical" x1="0" y1="0" x2="0" y2="1">
@@ -29,10 +29,10 @@
   </g>
 
   <!-- Large serif initial -->
-  <text x="600" y="945" font-family="Georgia, 'Times New Roman', serif" font-size="1275" fill="#FAF8F5" fill-opacity="0.92" text-anchor="middle" font-weight="300">F</text>
+  <text x="600" y="945" font-family="Georgia, 'Times New Roman', serif" font-size="1275" fill="#FAF8F5" fill-opacity="0.92" text-anchor="middle" font-weight="300">A</text>
 
   <!-- Bottom brand band -->
   <rect x="0" y="1360" width="1200" height="140" fill="#1A1A1A" opacity="0.7"/>
-  <text x="600" y="1418" font-family="Georgia, serif" font-size="50" fill="#FAF8F5" text-anchor="middle" font-weight="500" letter-spacing="-1">Fulya</text>
-  <text x="600" y="1464" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#B87333" text-anchor="middle" letter-spacing="6">OWNER · DIRECTOR</text>
+  <text x="600" y="1418" font-family="Georgia, serif" font-size="50" fill="#FAF8F5" text-anchor="middle" font-weight="500" letter-spacing="-1">Angela</text>
+  <text x="600" y="1464" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#B87333" text-anchor="middle" letter-spacing="6">SENIOR STYLIST</text>
 </svg>

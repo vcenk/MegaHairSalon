@@ -2,10 +2,19 @@ export type NavItem = { readonly label: string; readonly href: string };
 
 export const PRIMARY_NAV: readonly NavItem[] = [
   { label: "Services", href: "/services" },
+  { label: "Prices", href: "/menu" },
   { label: "Team", href: "/team" },
   { label: "Gallery", href: "/gallery" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
+] as const;
+
+export const FOOTER_SALON: readonly NavItem[] = [
+  { label: "About", href: "/about" },
+  { label: "Our Team", href: "/team" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Blog", href: "/blog" },
 ] as const;
 
 export const FOOTER_SERVICES: readonly NavItem[] = [

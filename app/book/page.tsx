@@ -3,12 +3,12 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, BOOKING } from "@/lib/constants";
 
 export const metadata = pageMetadata({
   title: "Book an Appointment | Megas Hair Salon Coquitlam",
   description:
-    "Book online at Megas Hair Salon. Master colourists, balayage, blonde, precision cuts, and more. Call (778) 858-0396 or schedule below.",
+    "Book online at Megas Hair Salon. Master colourists, balayage, blonde, precision cuts, and more. Reserve instantly on Phorest or call (778) 858-0396.",
   path: "/book",
 });
 
@@ -22,20 +22,21 @@ export default function BookPage() {
         ]}
         eyebrow="Book"
         title="Reserve your chair."
-        subhead="Pick a stylist, a service, and a time. We'll confirm by email."
+        subhead="Pick a stylist, a service, and a time — our full menu and live availability are on Phorest."
         align="center"
       />
 
-      {/* Fresha embed placeholder */}
       <section
         className="mx-auto px-6 md:px-10 py-10 md:py-16"
         style={{ maxWidth: "var(--container-narrow)" }}
       >
         <FadeIn>
-          {/* TODO: Replace with Fresha embed once NEXT_PUBLIC_FRESHA_ACCOUNT_ID is provisioned (see docs/LAUNCH-BLOCKERS.md). Fresha snippet goes here as a <script> + <div id="fresha-widget"> or an iframe per their current integration docs. */}
           <div
-            className="border-2 border-dashed p-10 md:p-14 text-center"
-            style={{ borderColor: "var(--color-border)" }}
+            className="border p-10 md:p-14 text-center"
+            style={{
+              borderColor: "var(--color-border)",
+              backgroundColor: "var(--color-bg-alt)",
+            }}
           >
             <Eyebrow accent>Online booking</Eyebrow>
             <h2
@@ -45,26 +46,26 @@ export default function BookPage() {
                 letterSpacing: "var(--tracking-display)",
               }}
             >
-              Our Fresha booking widget lands here.
+              Book instantly on Phorest.
             </h2>
             <p
               className="mt-5 text-muted md:text-lg max-w-xl mx-auto"
               style={{ lineHeight: "var(--leading-body)" }}
             >
-              We&apos;re finalising our online scheduling. In the meantime,
-              the fastest way to book is by phone — most same-week slots are
-              filled this way.
+              Choose your service, your stylist, and a time that suits you.
+              You&apos;ll get instant confirmation. Prefer to talk it through?
+              Give us a call — most same-week slots are filled by phone.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <CtaButton href={`tel:${CONTACT.phoneHref}`} external>
-                Call {CONTACT.phone}
+              <CtaButton href={BOOKING.url} external>
+                Book on Phorest
               </CtaButton>
               <CtaButton
-                href={`mailto:${CONTACT.email}`}
+                href={`tel:${CONTACT.phoneHref}`}
                 variant="secondary"
                 external
               >
-                Email us
+                Call {CONTACT.phone}
               </CtaButton>
             </div>
           </div>

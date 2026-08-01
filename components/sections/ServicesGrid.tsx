@@ -4,6 +4,9 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { SERVICES } from "@/lib/services";
 
+// Homepage shows a curated six; the full list lives on /services and /menu.
+const FEATURED_SERVICES = SERVICES.slice(0, 6);
+
 export function ServicesGrid() {
   return (
     <section
@@ -24,9 +27,9 @@ export function ServicesGrid() {
         </h2>
       </FadeIn>
 
-      <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
-        {SERVICES.map((service, i) => (
-          <FadeIn key={service.slug} delay={(i % 4) * 0.08}>
+      <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        {FEATURED_SERVICES.map((service, i) => (
+          <FadeIn key={service.slug} delay={(i % 3) * 0.08}>
             <Link
               href={`/services/${service.slug}`}
               className="group block"
@@ -36,7 +39,7 @@ export function ServicesGrid() {
                   src={service.image}
                   alt={service.imageAlt}
                   fill
-                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
                 />
               </div>
@@ -60,13 +63,20 @@ export function ServicesGrid() {
         ))}
       </div>
 
-      <FadeIn className="mt-14 md:mt-16 text-center">
+      <FadeIn className="mt-14 md:mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
         <Link
           href="/services"
           className="inline-block text-xs uppercase text-foreground hover:text-accent transition-colors underline underline-offset-4"
           style={{ letterSpacing: "var(--tracking-label)" }}
         >
           View all services →
+        </Link>
+        <Link
+          href="/menu"
+          className="inline-block text-xs uppercase text-foreground hover:text-accent transition-colors underline underline-offset-4"
+          style={{ letterSpacing: "var(--tracking-label)" }}
+        >
+          See full price menu →
         </Link>
       </FadeIn>
     </section>

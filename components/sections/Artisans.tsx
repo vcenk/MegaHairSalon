@@ -4,6 +4,9 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { TEAM } from "@/lib/team";
 
+// Homepage teaser shows the four leads; the full team lives on /team.
+const FEATURED_TEAM = TEAM.slice(0, 4);
+
 export function Artisans() {
   return (
     <section
@@ -24,7 +27,7 @@ export function Artisans() {
       </FadeIn>
 
       <div className="mt-12 md:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-        {TEAM.map((person, i) => (
+        {FEATURED_TEAM.map((person, i) => (
           <FadeIn key={person.slug} delay={(i % 4) * 0.08}>
             <Link href={`/team/${person.slug}`} className="group block">
               <div className="relative w-full aspect-[4/5] overflow-hidden bg-bg-alt">

@@ -1,14 +1,28 @@
 import Link from "next/link";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import { FEATURED_REVIEWS } from "@/lib/reviews";
 import { RATINGS } from "@/lib/constants";
 
 export function Testimonials() {
   return (
     <section
-      className="mx-auto px-6 md:px-10 py-16 md:py-24 lg:py-32"
+      className="mx-auto px-6 md:px-10 py-16 md:py-24 lg:py-32 border-t border-border"
       style={{ maxWidth: "var(--container-max)" }}
     >
+      <FadeIn className="max-w-2xl mb-12 md:mb-16">
+        <Eyebrow>Kind words</Eyebrow>
+        <h2
+          className="mt-4 font-display text-[clamp(2rem,4vw,3.25rem)]"
+          style={{
+            lineHeight: "var(--leading-tight)",
+            letterSpacing: "var(--tracking-display)",
+          }}
+        >
+          What our guests say.
+        </h2>
+      </FadeIn>
+
       <div className="grid md:grid-cols-3 gap-10 md:gap-12 lg:gap-16">
         {FEATURED_REVIEWS.map((review, i) => (
           <FadeIn key={i} delay={i * 0.1}>

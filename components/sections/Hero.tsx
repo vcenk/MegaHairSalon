@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Star } from "lucide-react";
 import { CtaButton } from "@/components/ui/CtaButton";
-import { RATINGS } from "@/lib/constants";
+import { RATINGS, BOOKING } from "@/lib/constants";
 
 const HEADLINE_WORDS = ["Hair,", "sculpted", "with", "intention."] as const;
 
@@ -158,7 +158,9 @@ export function Hero() {
             variants={item}
             className="mt-8 flex flex-col sm:flex-row gap-5 sm:gap-8 items-start sm:items-center"
           >
-            <CtaButton href="/book">Book an appointment</CtaButton>
+            <CtaButton href={BOOKING.url} external>
+              Book an appointment
+            </CtaButton>
             <Link
               href="/about"
               className="text-[0.75rem] uppercase text-foreground hover:text-accent transition-colors underline underline-offset-4"
@@ -167,14 +169,6 @@ export function Hero() {
               Discover the craft →
             </Link>
           </motion.div>
-
-          <motion.p
-            variants={item}
-            className="mt-10 text-[0.7rem] uppercase text-muted"
-            style={{ letterSpacing: "var(--tracking-label)" }}
-          >
-            Master colourists — Bülent · Gazi · Emir
-          </motion.p>
         </motion.div>
       </div>
     </section>

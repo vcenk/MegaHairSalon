@@ -1,7 +1,7 @@
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { CtaButton } from "@/components/ui/CtaButton";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, BOOKING } from "@/lib/constants";
 
 function fullAddress() {
   const { streetAddress, addressLocality, addressRegion, postalCode } =
@@ -63,7 +63,9 @@ export function Visit() {
             </div>
           </dl>
           <div className="mt-8 flex flex-wrap gap-4">
-            <CtaButton href="/book">Book online</CtaButton>
+            <CtaButton href={BOOKING.url} external>
+              Book online
+            </CtaButton>
             <CtaButton
               href={directionsHref()}
               variant="secondary"

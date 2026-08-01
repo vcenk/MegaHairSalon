@@ -23,7 +23,7 @@ export default function TeamHubPage() {
         ]}
         eyebrow="The Artisans"
         title="Hands that have shaped decades of hair."
-        subhead="Four stylists. One hundred and twenty-plus years of combined craft."
+        subhead="A team of master colourists and senior stylists, with over a century of combined craft."
       />
 
       <section

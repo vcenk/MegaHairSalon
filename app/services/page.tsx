@@ -65,6 +65,20 @@ export default function ServicesHubPage() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn className="mt-14 md:mt-20 border-t border-border pt-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <p className="md:text-lg text-muted max-w-xl">
+            Looking for everything — brows, perms, treatments, extensions, and
+            full colour pricing?
+          </p>
+          <Link
+            href="/menu"
+            className="text-[0.75rem] uppercase text-foreground hover:text-accent transition-colors underline underline-offset-4 whitespace-nowrap"
+            style={{ letterSpacing: "var(--tracking-label)" }}
+          >
+            View the full price menu →
+          </Link>
+        </FadeIn>
       </section>
 
       <Visit />

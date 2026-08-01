@@ -196,6 +196,33 @@ export function personSchema({
   };
 }
 
+type MenuCategoryInput = {
+  name: string;
+  items: readonly { name: string; priceValue?: number }[];
+};
+
+/** OfferCatalog for the full price menu page. */
+export function menuSchema(categories: readonly MenuCategoryInput[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    name: `${BUSINESS.name} — Service Menu`,
+    url: `${SITE.url}/menu`,
+    provider: { "@id": BUSINESS_ID },
+    itemListElement: categories.map((cat) => ({
+      "@type": "OfferCatalog",
+      name: cat.name,
+      itemListElement: cat.items.map((item) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: item.name },
+        ...(item.priceValue !== undefined
+          ? { price: item.priceValue, priceCurrency: "CAD" }
+          : {}),
+      })),
+    })),
+  };
+}
+
 /** Drop in a <JsonLd data={...} /> component inside any page. */
 export function jsonLdScriptProps(data: unknown) {
   return {

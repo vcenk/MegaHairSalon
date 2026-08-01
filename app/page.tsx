@@ -4,7 +4,6 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Hero } from "@/components/sections/Hero";
 import { BrandOrigin } from "@/components/sections/BrandOrigin";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
-import { ReviewsMarquee } from "@/components/sections/ReviewsMarquee";
 import { Artisans } from "@/components/sections/Artisans";
 import { FeaturedWork } from "@/components/sections/FeaturedWork";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -25,7 +24,6 @@ export default function Home() {
       <Hero />
       <BrandOrigin />
       <ServicesGrid />
-      <ReviewsMarquee />
       <Artisans />
       <FeaturedWork />
       <Testimonials />

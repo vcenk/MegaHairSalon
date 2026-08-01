@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { BOOKING } from "@/lib/constants";
 
 type Props = {
   message?: string;
@@ -33,12 +34,14 @@ export function StubNotice({
               contact us
             </Link>{" "}
             or{" "}
-            <Link
-              href="/book"
+            <a
+              href={BOOKING.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-foreground hover:text-accent underline underline-offset-4 transition-colors"
             >
               book an appointment
-            </Link>
+            </a>
             .
           </p>
         </div>

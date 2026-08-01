@@ -137,11 +137,11 @@ export default function AboutPage() {
                 with experience.
               </p>
               <p>
-                Today, three master stylists — Bülent, Gazi, and Emir — lead
-                the salon, with director Fulya guiding the experience.
-                Together, they&apos;ve built a space that feels both modern
-                and warm, where every appointment is treated as a quiet
-                ritual.
+                Today, master stylists Bülent, Gazi, and Emir lead the salon
+                alongside a team of talented senior stylists, with owner and
+                director Fulya guiding the experience. Together, they&apos;ve
+                built a space that feels both modern and warm, where every
+                appointment is treated as a quiet ritual.
               </p>
             </div>
           </FadeIn>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Star, MapPin, Phone, Mail } from "lucide-react";
-import { BUSINESS, CONTACT, SOCIAL } from "@/lib/constants";
-import { FOOTER_SERVICES } from "@/lib/nav";
+import { BUSINESS, CONTACT, SOCIAL, BOOKING } from "@/lib/constants";
+import { FOOTER_SALON, FOOTER_SERVICES } from "@/lib/nav";
 import { Logo } from "./Logo";
 import { InstagramIcon, FacebookIcon } from "./BrandIcons";
 
@@ -26,11 +26,11 @@ export function Footer() {
       className="border-t border-border"
       style={{ backgroundColor: "var(--color-bg-alt)" }}
     >
+      {/* Brand row */}
       <div
-        className="mx-auto px-6 md:px-10 py-16 md:py-20 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-10"
+        className="mx-auto px-6 md:px-10 pt-16 md:pt-20 pb-10 md:pb-14 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-8 border-b border-border"
         style={{ maxWidth: "var(--container-max)" }}
       >
-        {/* Column 1 — Brand */}
         <div>
           <Logo size="lg" />
           <p className="mt-5 text-sm text-muted leading-relaxed">
@@ -38,6 +38,36 @@ export function Footer() {
             <br />
             From Istanbul to Vancouver.
           </p>
+        </div>
+        <a
+          href={BOOKING.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center bg-foreground text-background px-8 py-4 text-[0.7rem] uppercase hover:bg-accent transition-colors"
+          style={{ letterSpacing: "0.08em" }}
+        >
+          Book an appointment
+        </a>
+      </div>
+
+      <div
+        className="mx-auto px-6 md:px-10 py-14 md:py-16 grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-10"
+        style={{ maxWidth: "var(--container-max)" }}
+      >
+        {/* Column 1 — Salon */}
+        <div>
+          <span className={LABEL_CLASS} style={LABEL_STYLE}>
+            Salon
+          </span>
+          <ul className="flex flex-col gap-3">
+            {FOOTER_SALON.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href} className={LINK_CLASS}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Column 2 — Services */}
@@ -53,6 +83,11 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/menu" className={`${LINK_CLASS} text-foreground`}>
+                Full price menu →
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -103,19 +138,21 @@ export function Footer() {
             </div>
           </dl>
 
-          <Link
-            href="/book"
-            className="mt-6 inline-flex items-center bg-foreground text-background px-6 py-3 text-[0.7rem] uppercase hover:bg-accent transition-colors"
-            style={{ letterSpacing: "0.08em" }}
+          <a
+            href={directionsHref()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-block text-xs uppercase text-foreground hover:text-accent transition-colors underline underline-offset-4"
+            style={{ letterSpacing: "var(--tracking-label)" }}
           >
-            Book Now
-          </Link>
+            Get directions →
+          </a>
         </div>
 
-        {/* Column 4 — Connect */}
+        {/* Column 4 — Follow */}
         <div>
           <span className={LABEL_CLASS} style={LABEL_STYLE}>
-            Connect
+            Follow
           </span>
           <ul className="flex flex-col gap-3 text-sm text-muted">
             <li>

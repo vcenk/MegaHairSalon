@@ -12,7 +12,7 @@ import { CtaButton } from "@/components/ui/CtaButton";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { LOCATIONS, getLocation } from "@/lib/locations";
 import { SERVICES } from "@/lib/services";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, BOOKING } from "@/lib/constants";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -67,7 +67,7 @@ export default async function LocationPage({ params }: Params) {
         className="mx-auto px-6 md:px-10 pb-10 md:pb-14 flex flex-wrap gap-4"
         style={{ maxWidth: "var(--container-max)" }}
       >
-        <CtaButton href="/book">Book your appointment</CtaButton>
+        <CtaButton href={BOOKING.url} external>Book your appointment</CtaButton>
         <CtaButton href={directionsHref()} variant="secondary" external>
           Get directions
         </CtaButton>
@@ -350,7 +350,7 @@ export default async function LocationPage({ params }: Params) {
             Ready to make the drive?
           </h2>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
-            <CtaButton href="/book">Book your appointment</CtaButton>
+            <CtaButton href={BOOKING.url} external>Book your appointment</CtaButton>
             <CtaButton href={directionsHref()} variant="secondary" external>
               Get directions
             </CtaButton>

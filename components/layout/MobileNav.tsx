@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { X, Phone } from "lucide-react";
 import { PRIMARY_NAV } from "@/lib/nav";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, BOOKING } from "@/lib/constants";
 import { Logo } from "./Logo";
 
 type Props = {
@@ -76,14 +76,16 @@ export function MobileNav({ open, onClose }: Props) {
           <Phone size={18} strokeWidth={1.5} />
           <span className="text-lg">{CONTACT.phone}</span>
         </a>
-        <Link
-          href="/book"
+        <a
+          href={BOOKING.url}
+          target="_blank"
+          rel="noopener noreferrer"
           onClick={onClose}
           className="inline-flex items-center justify-center bg-foreground text-background px-8 py-4 text-xs uppercase hover:bg-accent transition-colors"
           style={{ letterSpacing: "0.08em" }}
         >
           Book Now
-        </Link>
+        </a>
       </div>
     </div>
   );

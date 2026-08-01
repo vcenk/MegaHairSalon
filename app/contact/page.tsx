@@ -6,7 +6,7 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, BOOKING } from "@/lib/constants";
 
 export const metadata = pageMetadata({
   title: "Contact Megas Hair Salon | 150-1169 Pacific St, Coquitlam",
@@ -105,7 +105,7 @@ export default function ContactPage() {
               </div>
 
               <div className="flex flex-wrap gap-4 pt-2">
-                <CtaButton href="/book">Book online</CtaButton>
+                <CtaButton href={BOOKING.url} external>Book online</CtaButton>
                 <CtaButton
                   href={directionsHref()}
                   variant="secondary"
@@ -237,7 +237,7 @@ export default function ContactPage() {
               .
             </p>
             <div className="mt-8 flex justify-center">
-              <CtaButton href="/book">Book your appointment</CtaButton>
+              <CtaButton href={BOOKING.url} external>Book your appointment</CtaButton>
             </div>
           </FadeIn>
         </div>

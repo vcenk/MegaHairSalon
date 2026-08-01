@@ -11,6 +11,7 @@ import { CtaButton } from "@/components/ui/CtaButton";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TEAM, getTeamMember } from "@/lib/team";
 import { SERVICES } from "@/lib/services";
+import { BOOKING } from "@/lib/constants";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -103,7 +104,7 @@ export default async function TeamMemberPage({ params }: Params) {
             </div>
 
             <div className="mt-10">
-              <CtaButton href="/book">
+              <CtaButton href={BOOKING.url} external>
                 Book an appointment with {person.name}
               </CtaButton>
             </div>

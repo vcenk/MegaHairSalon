@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Star, MapPin, Phone, Mail } from "lucide-react";
-import { BUSINESS, CONTACT, SOCIAL } from "@/lib/constants";
+import { BUSINESS, CONTACT, SOCIAL, BOOKING } from "@/lib/constants";
 import { FOOTER_SERVICES, FOOTER_EXPLORE } from "@/lib/nav";
 import { Logo } from "./Logo";
 import { InstagramIcon, FacebookIcon } from "./BrandIcons";
@@ -69,6 +69,11 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/menu" className={`${LINK_CLASS} text-foreground`}>
+                Full price menu →
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -119,13 +124,15 @@ export function Footer() {
             </div>
           </dl>
 
-          <Link
-            href="/book"
+          <a
+            href={BOOKING.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 inline-flex items-center bg-foreground text-background rounded-full px-7 py-3 text-[0.7rem] uppercase hover:bg-accent transition-colors"
             style={{ letterSpacing: "0.08em" }}
           >
             Book Now
-          </Link>
+          </a>
         </div>
 
         {/* Column 5 — Connect */}
